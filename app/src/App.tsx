@@ -73,7 +73,6 @@ function peopleFromScenario(h: Heirs): People {
 }
 
 const COPYRIGHT_URL = 'https://www.linkedin.com/in/thabet-chelligue-6119b217';
-const LICENSE_URL = 'https://github.com/thabet-noob/inheritance-in-islam/blob/main/LICENSE';
 
 export default function App() {
   const [gender, setGender] = useState<Gender>(shared?.g ?? 'male');
@@ -454,10 +453,6 @@ export default function App() {
           © {new Date().getFullYear()}{' '}
           <a href={COPYRIGHT_URL} target="_blank" rel="author noopener noreferrer" lang="en" dir="ltr">
             Thabet Chelligue
-          </a>
-          .{' '}
-          <a href={LICENSE_URL} target="_blank" rel="license noopener noreferrer">
-            {s.rights}
           </a>
         </p>
       </footer>
