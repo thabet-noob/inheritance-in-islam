@@ -565,13 +565,14 @@ h2 { font-size: 15px; margin: 0 0 16px; color: var(--brand); font-weight: 700; l
 }
 @media screen and (max-width: 760px) {
   /* tree becomes a wrapping list: single cards two per row, family groups full width */
-  .tree { display: flex; flex-wrap: wrap; gap: 10px; zoom: 1; }
-  .slot { grid-area: auto !important; flex: 1 1 140px; min-width: 0; }
-  .slot--deceased, .slot--row { flex-basis: 100%; }
-  .slot--deceased { flex-wrap: wrap; justify-content: center; align-items: center; }
-  .slot--row { flex-wrap: wrap; }
-  .slot--row > .group { flex: 1 1 150px; }
-  .group--single { min-width: 0; width: 100%; }
+  /* (skipped in .print-mode, so a PDF exported from a phone gets the laptop tree) */
+  .app:not(.print-mode) .tree { display: flex; flex-wrap: wrap; gap: 10px; zoom: 1; }
+  .app:not(.print-mode) .slot { grid-area: auto !important; flex: 1 1 140px; min-width: 0; }
+  .app:not(.print-mode) .slot--deceased, .app:not(.print-mode) .slot--row { flex-basis: 100%; }
+  .app:not(.print-mode) .slot--deceased { flex-wrap: wrap; justify-content: center; align-items: center; }
+  .app:not(.print-mode) .slot--row { flex-wrap: wrap; }
+  .app:not(.print-mode) .slot--row > .group { flex: 1 1 150px; }
+  .app:not(.print-mode) .group--single { min-width: 0; width: 100%; }
   .tree-card { overflow-x: visible; padding: 12px; }
   .app { overflow-x: hidden; }
   .table td, .table th { padding: 8px 5px; font-size: 12.5px; }
@@ -692,7 +693,7 @@ h2 { font-size: 15px; margin: 0 0 16px; color: var(--brand); font-weight: 700; l
   .hero, .no-print, .share, .tooltip { display: none !important; }
   /* the family tree, scaled to the page width and without its controls */
   .tree-card { overflow: visible; padding: 14px; margin-bottom: 14px; break-inside: avoid; }
-  .tree { zoom: var(--print-scale, 1); }
+  .viz-root.app .tree { zoom: var(--print-scale, 1); width: max-content; margin-inline: auto; }
   .slot { animation: none; }
   .add, .person__remove, .segmented, .deceased__edit, .hidden-note { display: none !important; }
   .person__name, .deceased__label { box-shadow: none !important; background: none !important; }
@@ -757,4 +758,9 @@ button, a, input, select, label { touch-action: manipulation; -webkit-tap-highli
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+
+/* while measuring for print on screen: laptop layout at natural size */
+@media screen {
+  .print-mode .tree { zoom: 1; width: max-content; }
 }

@@ -92,10 +92,13 @@ export default function App() {
   // Fit the tree to its card: measure its natural width after each render and on resize, then
   // scale it with CSS zoom (screen) and to the A4 page width (print).
   const treeRef = useRef<HTMLDivElement>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
   const fitTree = useCallback(() => {
     const tree = treeRef.current;
     const card = tree?.parentElement;
     if (!tree || !card) return;
+    // Leave the layout alone while printing; the print scale is set by preparePrint.
+    if (rootRef.current?.classList.contains('print-mode') || window.matchMedia('print').matches) return;
     const current = parseFloat(tree.style.getPropertyValue('--fit-scale')) || 1;
     const rects = [...tree.children].map((c) => c.getBoundingClientRect()).filter((r) => r.width > 0);
     if (!rects.length) return;
@@ -106,8 +109,31 @@ export default function App() {
     const next = isGrid ? Math.max(0.55, Math.min(1, available / natural)) : 1;
     if (Math.abs(next - current) > 0.005) tree.style.setProperty('--fit-scale', next.toFixed(3));
     const PRINT_WIDTH = 640; // A4 (794px) minus page margins and card padding
-    tree.style.setProperty('--print-scale', Math.min(1, PRINT_WIDTH / natural).toFixed(3));
+    if (isGrid) tree.style.setProperty('--print-scale', Math.min(1, PRINT_WIDTH / natural).toFixed(3));
   }, []);
+
+  // Exporting from a phone: switch to the laptop layout just for printing, measure the full tree
+  // and scale it to the A4 width, then switch back. Runs for the Export button and the browser's
+  // own print command alike.
+  const preparePrint = useCallback(() => {
+    const root = rootRef.current;
+    const tree = treeRef.current;
+    if (!root || !tree) return;
+    root.classList.add('print-mode');
+    const rects = [...tree.children].map((c) => c.getBoundingClientRect()).filter((r) => r.width > 0);
+    if (!rects.length) return;
+    const natural = Math.max(...rects.map((r) => r.right)) - Math.min(...rects.map((r) => r.left));
+    tree.style.setProperty('--print-scale', Math.min(1, 640 / natural).toFixed(3));
+  }, []);
+  useEffect(() => {
+    const end = () => rootRef.current?.classList.remove('print-mode');
+    window.addEventListener('beforeprint', preparePrint);
+    window.addEventListener('afterprint', end);
+    return () => {
+      window.removeEventListener('beforeprint', preparePrint);
+      window.removeEventListener('afterprint', end);
+    };
+  }, [preparePrint]);
   useLayoutEffect(fitTree);
   useEffect(() => {
     const card = treeRef.current?.parentElement;
@@ -246,7 +272,7 @@ export default function App() {
   };
 
   return (
-    <div className="viz-root app" dir={dir} lang={lang}>
+    <div className="viz-root app" dir={dir} lang={lang} ref={rootRef}>
       <header className="hero">
         <div className="hero__top">
           <div className="brand">
@@ -434,7 +460,11 @@ export default function App() {
           netCents={netCents}
           actions={
             <>
-              <button className="action action--primary" onClick={() => window.print()}>
+              <button className="action action--primary" onClick={() => {
+                  preparePrint();
+                  window.print();
+                }}
+              >
                 <span aria-hidden="true">⤓</span> {s.exportPdf}
               </button>
               <ShareMenu
