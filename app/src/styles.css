@@ -765,15 +765,24 @@ button, a, input, select, label { touch-action: manipulation; -webkit-tap-highli
   .print-mode .tree { zoom: 1; width: max-content; }
 }
 
-/* gentle green pulse on living heirs who receive a share */
+/* green pulse on living heirs who receive a share */
 @keyframes alive-pulse {
-  0% { box-shadow: 0 6px 14px rgb(15 138 95 / 0.28), 0 0 0 0 rgb(26 168 116 / 0.55); }
-  70% { box-shadow: 0 6px 14px rgb(15 138 95 / 0.28), 0 0 0 9px rgb(26 168 116 / 0); }
-  100% { box-shadow: 0 6px 14px rgb(15 138 95 / 0.28), 0 0 0 0 rgb(26 168 116 / 0); }
+  0% {
+    box-shadow: 0 6px 14px rgb(15 138 95 / 0.3), 0 0 0 0 rgb(34 197 120 / 0.85);
+    filter: brightness(1.12);
+  }
+  60% {
+    box-shadow: 0 6px 14px rgb(15 138 95 / 0.3), 0 0 0 16px rgb(34 197 120 / 0);
+    filter: brightness(1);
+  }
+  100% {
+    box-shadow: 0 6px 14px rgb(15 138 95 / 0.3), 0 0 0 0 rgb(34 197 120 / 0);
+    filter: brightness(1);
+  }
 }
-.person--on .person__disc { animation: alive-pulse 2.4s ease-out infinite; }
-.person--on:nth-child(2n) .person__disc { animation-delay: 0.8s; }
-.person--on:nth-child(3n) .person__disc { animation-delay: 1.6s; }
+.person--on .person__disc { animation: alive-pulse 1.6s ease-out infinite; }
+.person--on:nth-child(2n) .person__disc { animation-delay: 0.5s; }
+.person--on:nth-child(3n) .person__disc { animation-delay: 1s; }
 @media print {
   .person--on .person__disc { animation: none; }
 }
