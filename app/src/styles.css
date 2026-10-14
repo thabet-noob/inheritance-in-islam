@@ -764,3 +764,16 @@ button, a, input, select, label { touch-action: manipulation; -webkit-tap-highli
 @media screen {
   .print-mode .tree { zoom: 1; width: max-content; }
 }
+
+/* gentle green pulse on living heirs who receive a share */
+@keyframes alive-pulse {
+  0% { box-shadow: 0 6px 14px rgb(15 138 95 / 0.28), 0 0 0 0 rgb(26 168 116 / 0.55); }
+  70% { box-shadow: 0 6px 14px rgb(15 138 95 / 0.28), 0 0 0 9px rgb(26 168 116 / 0); }
+  100% { box-shadow: 0 6px 14px rgb(15 138 95 / 0.28), 0 0 0 0 rgb(26 168 116 / 0); }
+}
+.person--on .person__disc { animation: alive-pulse 2.4s ease-out infinite; }
+.person--on:nth-child(2n) .person__disc { animation-delay: 0.8s; }
+.person--on:nth-child(3n) .person__disc { animation-delay: 1.6s; }
+@media print {
+  .person--on .person__disc { animation: none; }
+}
