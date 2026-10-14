@@ -1,0 +1,15 @@
+Test Case #74
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=74
+
+Heirs:
+  - FullUncle x1
+
+Shares by Category:
+  - FullUncle                    1/1      100%
+
+Shares by Individual:
+  - FullUncle                    1        100%
+
+Calculation Steps:
+  1. Distribute the remaining shares according to relative priority (Rule 14)
+  2. FullUncle is the only heir remaining receiving share of 1/1 (Rule 14).

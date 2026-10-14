@@ -1,0 +1,19 @@
+Test Case #47
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=47
+
+Heirs:
+  - Daughter x1
+  - GrandSon x1
+
+Shares by Category:
+  - Daughter                     1/2      50%
+  - GrandSon                     1/2      50%
+
+Shares by Individual:
+  - Daughter                     1/2      50%
+  - GrandSon                     1/2      50%
+
+Calculation Steps:
+  1. Daughter gets the prescribed share of 1/2 (Rule 3a).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. GrandSon is the only heir remaining receiving share of 1/2 (Rule 14).

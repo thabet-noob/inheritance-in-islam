@@ -1,0 +1,64 @@
+{
+  "id": 73,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=73",
+  "heirs": [
+    {
+      "heir": "Husband",
+      "count": 1
+    },
+    {
+      "heir": "GrandSon",
+      "count": 1
+    },
+    {
+      "heir": "GrandDaughter",
+      "count": 2
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Husband",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "GrandSon",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Husband",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "GrandSon",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    },
+    {
+      "heir": "GrandDaughter 1",
+      "fraction": "3/16",
+      "percentage": "18.75%"
+    },
+    {
+      "heir": "GrandDaughter 2",
+      "fraction": "3/16",
+      "percentage": "18.75%"
+    }
+  ],
+  "steps": [
+    "Husband gets the prescribed share of 1/4 (Rule 1b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of GrandSon and GrandDaughter (Rule 44).",
+    "GrandSon and GrandDaughter share in the ratio of 2:1 (Rule 15)",
+    "GrandSon gets the share of 3/8 and GrandDaughter gets the share of 3/8. (Rule 15, 44)"
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "id": 74,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=74",
+  "heirs": [
+    {
+      "heir": "FullUncle",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "FullUncle",
+      "fraction": "1/1",
+      "percentage": "100%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "FullUncle",
+      "fraction": "1",
+      "percentage": "100%"
+    }
+  ],
+  "steps": [
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "FullUncle is the only heir remaining receiving share of 1/1 (Rule 14)."
+  ]
+}

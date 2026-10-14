@@ -1,0 +1,49 @@
+{
+  "id": 15,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=15",
+  "heirs": [
+    {
+      "heir": "Daughter",
+      "count": 1
+    },
+    {
+      "heir": "GrandDaughter",
+      "count": 2
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Daughter",
+      "fraction": "3/4",
+      "percentage": "75%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "1/4",
+      "percentage": "25%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Daughter",
+      "fraction": "3/4",
+      "percentage": "75%"
+    },
+    {
+      "heir": "GrandDaughter 1",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "GrandDaughter 2",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    }
+  ],
+  "steps": [
+    "Daughter gets the prescribed share of 1/2 (Rule 3a).",
+    "Daughter gets the prescribed share of 1/6 (Rule 4c).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19)."
+  ]
+}

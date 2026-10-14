@@ -1,0 +1,27 @@
+Test Case #94
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=94
+
+Heirs:
+  - Wife x1
+  - Daughter x1
+  - FullBrother x1
+  - FullUncle x1
+
+Shares by Category:
+  - Wife                         1/8      12.5%
+  - Daughter                     1/2      50%
+  - FullBrother                  3/8      37.5%
+  - FullUncle                    0/8      0%
+
+Shares by Individual:
+  - Wife                         1/8      12.5%
+  - Daughter                     1/2      50%
+  - FullBrother                  3/8      37.5%
+  - FullUncle                    0        0%
+
+Calculation Steps:
+  1. FullBrother blocks FullUncle from receiving any share. (Rule 13)
+  2. Wife gets the prescribed share of 1/8 (Rule 2b).
+  3. Daughter gets the prescribed share of 1/2 (Rule 3a).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. FullBrother is the only heir remaining receiving share of 3/8 (Rule 14).

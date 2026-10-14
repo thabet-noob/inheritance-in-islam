@@ -1,0 +1,17 @@
+Test Case #35
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=35
+
+Heirs:
+  - Son x3
+
+Shares by Category:
+  - Son                          1/1      100%
+
+Shares by Individual:
+  - Son 1                        1/3      33.33%
+  - Son 2                        1/3      33.33%
+  - Son 3                        1/3      33.33%
+
+Calculation Steps:
+  1. Distribute the remaining shares according to relative priority (Rule 14)
+  2. Son is the only heir remaining receiving share of 1/1 (Rule 14).

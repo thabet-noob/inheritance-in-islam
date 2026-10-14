@@ -1,0 +1,69 @@
+{
+  "id": 77,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=77",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Son",
+      "count": 3
+    },
+    {
+      "heir": "Daughter",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Son",
+      "fraction": "3/4",
+      "percentage": "75%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Son 1",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "Son 2",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "Son 3",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/8 (Rule 2b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of Son and Daughter (Rule 44).",
+    "Son and Daughter share in the ratio of 2:1 (Rule 15)",
+    "Son gets the share of 3/4 and Daughter gets the share of 1/8. (Rule 15, 44)"
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": 121,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=121",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Daughter",
+      "count": 2
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "7/10",
+      "percentage": "70%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "7/40",
+      "percentage": "17.5%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Daughter 1",
+      "fraction": "7/20",
+      "percentage": "35%"
+    },
+    {
+      "heir": "Daughter 2",
+      "fraction": "7/20",
+      "percentage": "35%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "7/40",
+      "percentage": "17.5%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/8 (Rule 2b).",
+    "Daughter gets the prescribed share of 2/3 (Rule 3b).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19)."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": 42,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=42",
+  "heirs": [
+    {
+      "heir": "Husband",
+      "count": 1
+    },
+    {
+      "heir": "GrandDaughter",
+      "count": 1
+    },
+    {
+      "heir": "FullCousin",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Husband",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "FullCousin",
+      "fraction": "1/4",
+      "percentage": "25%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Husband",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "FullCousin",
+      "fraction": "1/4",
+      "percentage": "25%"
+    }
+  ],
+  "steps": [
+    "Husband gets the prescribed share of 1/4 (Rule 1b).",
+    "Daughter gets the prescribed share of 1/2 (Rule 4a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "FullCousin is the only heir remaining receiving share of 1/4 (Rule 14)."
+  ]
+}

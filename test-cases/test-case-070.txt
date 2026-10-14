@@ -1,0 +1,24 @@
+Test Case #70
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=70
+
+Heirs:
+  - Wife x1
+  - PaternalBrother x1
+  - PaternalSister x1
+
+Shares by Category:
+  - Wife                         1/4      25%
+  - PaternalBrother              1/2      50%
+  - PaternalSister               1/4      25%
+
+Shares by Individual:
+  - Wife                         1/4      25%
+  - PaternalBrother              1/2      50%
+  - PaternalSister               1/4      25%
+
+Calculation Steps:
+  1. Wife gets the prescribed share of 1/4 (Rule 2a).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. Joint Ta'seeb of PaternalBrother and PaternalSister (Rule 44).
+  4. PaternalBrother and PaternalSister share in the ratio of 2:1 (Rule 15)
+  5. PaternalBrother gets the share of 1/2 and PaternalSister gets the share of 1/4. (Rule 15, 44)

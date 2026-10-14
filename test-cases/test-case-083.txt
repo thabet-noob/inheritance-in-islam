@@ -1,0 +1,28 @@
+Test Case #83
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=83
+
+Heirs:
+  - Daughter x2
+  - GrandSon x3
+  - GrandDaughter x2
+
+Shares by Category:
+  - Daughter                     2/3      66.67%
+  - GrandSon                     1/4      25%
+  - GrandDaughter                1/12     8.33%
+
+Shares by Individual:
+  - Daughter 1                   1/3      33.34%
+  - Daughter 2                   1/3      33.34%
+  - GrandSon 1                   1/12     8.33%
+  - GrandSon 2                   1/12     8.33%
+  - GrandSon 3                   1/12     8.33%
+  - GrandDaughter 1              1/24     4.16%
+  - GrandDaughter 2              1/24     4.16%
+
+Calculation Steps:
+  1. Daughter gets the prescribed share of 2/3 (Rule 3b).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. Joint Ta'seeb of GrandSon and GrandDaughter (Rule 44).
+  4. GrandSon and GrandDaughter share in the ratio of 2:1 (Rule 15)
+  5. GrandSon gets the share of 1/4 and GrandDaughter gets the share of 1/12. (Rule 15, 44)

@@ -1,0 +1,49 @@
+{
+  "id": 17,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=17",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "FullSister",
+      "count": 2
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "3/4",
+      "percentage": "75%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "FullSister 1",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    },
+    {
+      "heir": "FullSister 2",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/4 (Rule 2a).",
+    "Full Sister gets the prescribed share of 2/3 (Rule 10b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19)."
+  ]
+}

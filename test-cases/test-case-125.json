@@ -1,0 +1,78 @@
+{
+  "id": 125,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=125",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Father",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "MaternalBrother",
+      "count": 2
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "7/12",
+      "percentage": "58.33%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "MaternalBrother",
+      "fraction": "0/12",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "7/12",
+      "percentage": "58.33%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "MaternalBrother 1",
+      "fraction": "0",
+      "percentage": "0%"
+    },
+    {
+      "heir": "MaternalBrother 2",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "Father blocks MaternalBrother from receiving any share. (Rule 13)",
+    "Wife gets the prescribed share of 1/4 (Rule 2a).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Father is the only heir remaining receiving share of 7/12 (Rule 14)."
+  ]
+}

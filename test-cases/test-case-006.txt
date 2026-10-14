@@ -1,0 +1,19 @@
+Test Case #6
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=6
+
+Heirs:
+  - Father x1
+  - FullBrother x1
+
+Shares by Category:
+  - Father                       1/1      100%
+  - FullBrother                  0/1      0%
+
+Shares by Individual:
+  - Father                       1        100%
+  - FullBrother                  0        0%
+
+Calculation Steps:
+  1. Father blocks FullBrother from receiving any share. (Rule 13)
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. Father is the only heir remaining receiving share of 1/1 (Rule 14).

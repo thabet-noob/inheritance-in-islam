@@ -1,0 +1,70 @@
+{
+  "id": 84,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=84",
+  "heirs": [
+    {
+      "heir": "Husband",
+      "count": 1
+    },
+    {
+      "heir": "FullSister",
+      "count": 1
+    },
+    {
+      "heir": "PaternalBrother",
+      "count": 1
+    },
+    {
+      "heir": "PaternalSister",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Husband",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "0/2",
+      "percentage": "0%"
+    },
+    {
+      "heir": "PaternalSister",
+      "fraction": "0/2",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Husband",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "0",
+      "percentage": "0%"
+    },
+    {
+      "heir": "PaternalSister",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "Husband gets the prescribed share of 1/2 (Rule 1a).",
+    "Full Sister gets the prescribed share of 1/2 (Rule 10a)."
+  ]
+}

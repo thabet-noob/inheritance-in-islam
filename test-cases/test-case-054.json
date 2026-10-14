@@ -1,0 +1,58 @@
+{
+  "id": 54,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=54",
+  "heirs": [
+    {
+      "heir": "Daughter",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "PaternalBrother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Daughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Daughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    }
+  ],
+  "steps": [
+    "Daughter gets the prescribed share of 1/2 (Rule 3a).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "PaternalBrother is the only heir remaining receiving share of 1/3 (Rule 14)."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "id": 43,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=43",
+  "heirs": [
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "FullBrother",
+      "count": 2
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "5/6",
+      "percentage": "83.33%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullBrother 1",
+      "fraction": "5/12",
+      "percentage": "41.66%"
+    },
+    {
+      "heir": "FullBrother 2",
+      "fraction": "5/12",
+      "percentage": "41.66%"
+    }
+  ],
+  "steps": [
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "FullBrother is the only heir remaining receiving share of 5/6 (Rule 14)."
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": 38,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=38",
+  "heirs": [
+    {
+      "heir": "Father",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "FullSister",
+      "count": 2
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Father",
+      "fraction": "5/6",
+      "percentage": "83.33%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "0/6",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Father",
+      "fraction": "5/6",
+      "percentage": "83.33%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullSister 1",
+      "fraction": "0",
+      "percentage": "0%"
+    },
+    {
+      "heir": "FullSister 2",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "Father blocks FullSister from receiving any share. (Rule 13)",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Father is the only heir remaining receiving share of 5/6 (Rule 14)."
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "id": 35,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=35",
+  "heirs": [
+    {
+      "heir": "Son",
+      "count": 3
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Son",
+      "fraction": "1/1",
+      "percentage": "100%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Son 1",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    },
+    {
+      "heir": "Son 2",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    },
+    {
+      "heir": "Son 3",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    }
+  ],
+  "steps": [
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Son is the only heir remaining receiving share of 1/1 (Rule 14)."
+  ]
+}

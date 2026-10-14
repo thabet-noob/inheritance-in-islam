@@ -1,0 +1,79 @@
+{
+  "id": 82,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=82",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Son",
+      "count": 1
+    },
+    {
+      "heir": "Daughter",
+      "count": 2
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Son",
+      "fraction": "17/48",
+      "percentage": "35.42%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "17/48",
+      "percentage": "35.42%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Son",
+      "fraction": "17/48",
+      "percentage": "35.42%"
+    },
+    {
+      "heir": "Daughter 1",
+      "fraction": "17/96",
+      "percentage": "17.71%"
+    },
+    {
+      "heir": "Daughter 2",
+      "fraction": "17/96",
+      "percentage": "17.71%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/8 (Rule 2b).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of Son and Daughter (Rule 44).",
+    "Son and Daughter share in the ratio of 2:1 (Rule 15)",
+    "Son gets the share of 17/48 and Daughter gets the share of 17/48. (Rule 15, 44)"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": 37,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=37",
+  "heirs": [
+    {
+      "heir": "FullBrother",
+      "count": 2
+    },
+    {
+      "heir": "FullSister",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "FullBrother",
+      "fraction": "4/5",
+      "percentage": "80%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "1/5",
+      "percentage": "20%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "FullBrother 1",
+      "fraction": "2/5",
+      "percentage": "40%"
+    },
+    {
+      "heir": "FullBrother 2",
+      "fraction": "2/5",
+      "percentage": "40%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "1/5",
+      "percentage": "20%"
+    }
+  ],
+  "steps": [
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of FullBrother and FullSister (Rule 44).",
+    "FullBrother and FullSister share in the ratio of 2:1 (Rule 15)",
+    "FullBrother gets the share of 4/5 and FullSister gets the share of 1/5. (Rule 15, 44)"
+  ]
+}

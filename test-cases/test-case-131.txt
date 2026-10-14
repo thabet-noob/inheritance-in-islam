@@ -1,0 +1,31 @@
+Test Case #131
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=131
+
+Heirs:
+  - Wife x1
+  - Daughter x2
+  - Mother x1
+  - GrandFather x1
+  - PaternalBrother x1
+
+Shares by Category:
+  - Wife                         1/9      11.11%
+  - Daughter                     16/27    59.26%
+  - Mother                       4/27     14.81%
+  - GrandFather                  4/27     14.81%
+  - PaternalBrother              0/216    0%
+
+Shares by Individual:
+  - Wife                         1/9      11.11%
+  - Daughter 1                   8/27     29.63%
+  - Daughter 2                   8/27     29.63%
+  - Mother                       4/27     14.81%
+  - GrandFather                  4/27     14.81%
+  - PaternalBrother              0        0%
+
+Calculation Steps:
+  1. Wife gets the prescribed share of 1/8 (Rule 2b).
+  2. Daughter gets the prescribed share of 2/3 (Rule 3b).
+  3. Mother gets the prescribed share of 1/6 (Rule 6b).
+  4. Grandfather gets the prescribed share of 1/6 (Rule 7a).
+  5. Total shares have exceeded 100%. Shares need to be reduced proportionally (Rule 18).

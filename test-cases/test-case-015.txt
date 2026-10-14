@@ -1,0 +1,21 @@
+Test Case #15
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=15
+
+Heirs:
+  - Daughter x1
+  - GrandDaughter x2
+
+Shares by Category:
+  - Daughter                     3/4      75%
+  - GrandDaughter                1/4      25%
+
+Shares by Individual:
+  - Daughter                     3/4      75%
+  - GrandDaughter 1              1/8      12.5%
+  - GrandDaughter 2              1/8      12.5%
+
+Calculation Steps:
+  1. Daughter gets the prescribed share of 1/2 (Rule 3a).
+  2. Daughter gets the prescribed share of 1/6 (Rule 4c).
+  3. Distribute the remaining shares according to relative priority (Rule 14)
+  4. Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19).

@@ -1,0 +1,59 @@
+{
+  "id": 14,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=14",
+  "heirs": [
+    {
+      "heir": "PaternalGrandMother",
+      "count": 1
+    },
+    {
+      "heir": "FullSister",
+      "count": 1
+    },
+    {
+      "heir": "MaternalBrother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "PaternalGrandMother",
+      "fraction": "1/5",
+      "percentage": "20%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "3/5",
+      "percentage": "60%"
+    },
+    {
+      "heir": "MaternalBrother",
+      "fraction": "1/5",
+      "percentage": "20%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "PaternalGrandMother",
+      "fraction": "1/5",
+      "percentage": "20%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "3/5",
+      "percentage": "60%"
+    },
+    {
+      "heir": "MaternalBrother",
+      "fraction": "1/5",
+      "percentage": "20%"
+    }
+  ],
+  "steps": [
+    "Paternal Grandmother gets the prescribed share of 1/6 (Rule 8a).",
+    "Full Sister gets the prescribed share of 1/2 (Rule 10a).",
+    "Maternal Brother gets the prescribed share of 1/6 (Rule 12a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19)."
+  ]
+}

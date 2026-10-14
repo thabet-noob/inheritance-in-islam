@@ -1,0 +1,42 @@
+Frequently Asked Questions
+1) What is the purpose of this calculator?
+
+The Inheritance Calculator was designed to help Muslims learn & solve the Inheritance problems according to Islamic Shariah. This is completely free, Fisabeelillah.
+
+2) Is this calculator Accurate?
+
+We have taken the necessary steps to ensure maximum accuracy. We ran all the test cases against this calculator that are known to be accurate. However, if you feel that there is any inaccuracy, please let us know.
+
+3) What are the test cases on this site?
+
+The test cases are hundreds of problems that have been taken directly from the Text Books written by the Shuyookh. These obviously have been verified & known to be correct. These cases help to understand & learn the Inheritance law.
+
+4) Which books did you refer to?
+
+1) Inheritance - Regulations & Exhortations (Muhammad Al-Jibaly) (AlKitab & AsSunnah)
+
+2) The Islamic Law of Succession (Dr. A. Hussain)  (DarUsSalam)
+
+5) How does your calculator compare with other online calculators?
+
+We believe that this calculator is the most accurate one available on internet today. We continuously add & run new test cases approved by Shuyookh to ensure that the Calculator doesn't have any errors or defects.
+
+6) Do you have sufficient expertise in this field? Do you have the necessary qualifications?
+
+I am not a Shaykh or a Mufti. I am a student of knowledge learning from different Shuyookh. I have learned the Fiqh of Inheritance directly from Shaykh Waleed & read the books recommended by the Shaykh. This calculator should be used for reference only. It is best if you can verify your case with a qualified Mufti. The results on this site are not meant to be a fatwa.
+
+7) What are the limitations of this calculator?
+
+This calculator only considers 5 generations. It also excludes uncommon cases like - Freed slave inheritance, absence of standard heirs etc. We have also ignored minor difference of opinion among scholars & Madhaaib and chosen the most popular or strongest opinion to make it simple.
+
+8) How can I reach you if I have any questions, comments on suggestions?
+
+Please use the "Contact Us" link on the top.
+
+9) Where can I find the inheritance rules & further explanations?
+
+Please see the Rules & Articles links on the top.
+
+10) How can I help with this project?
+
+You can help us by giving your comments and suggestions. Also, you may publicize this site to your friends etc., so that more people can get benefited. Jazakallahu Khairan.

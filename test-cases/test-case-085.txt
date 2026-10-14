@@ -1,0 +1,29 @@
+Test Case #85
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=85
+
+Heirs:
+  - Wife x2
+  - Son x1
+  - Daughter x1
+  - Mother x1
+
+Shares by Category:
+  - Wife                         1/8      12.5%
+  - Son                          17/36    47.22%
+  - Daughter                     17/72    23.61%
+  - Mother                       1/6      16.67%
+
+Shares by Individual:
+  - Wife 1                       1/16     6.25%
+  - Wife 2                       1/16     6.25%
+  - Son                          17/36    47.22%
+  - Daughter                     17/72    23.61%
+  - Mother                       1/6      16.67%
+
+Calculation Steps:
+  1. Wife gets the prescribed share of 1/8 (Rule 2b).
+  2. Mother gets the prescribed share of 1/6 (Rule 6b).
+  3. Distribute the remaining shares according to relative priority (Rule 14)
+  4. Joint Ta'seeb of Son and Daughter (Rule 44).
+  5. Son and Daughter share in the ratio of 2:1 (Rule 15)
+  6. Son gets the share of 17/36 and Daughter gets the share of 17/72. (Rule 15, 44)

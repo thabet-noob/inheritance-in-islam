@@ -1,0 +1,54 @@
+{
+  "id": 76,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=76",
+  "heirs": [
+    {
+      "heir": "Son",
+      "count": 3
+    },
+    {
+      "heir": "Daughter",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Son",
+      "fraction": "6/7",
+      "percentage": "85.71%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "1/7",
+      "percentage": "14.29%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Son 1",
+      "fraction": "2/7",
+      "percentage": "28.57%"
+    },
+    {
+      "heir": "Son 2",
+      "fraction": "2/7",
+      "percentage": "28.57%"
+    },
+    {
+      "heir": "Son 3",
+      "fraction": "2/7",
+      "percentage": "28.57%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "1/7",
+      "percentage": "14.29%"
+    }
+  ],
+  "steps": [
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of Son and Daughter (Rule 44).",
+    "Son and Daughter share in the ratio of 2:1 (Rule 15)",
+    "Son gets the share of 6/7 and Daughter gets the share of 1/7. (Rule 15, 44)"
+  ]
+}

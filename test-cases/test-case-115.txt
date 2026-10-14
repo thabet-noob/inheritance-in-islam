@@ -1,0 +1,27 @@
+Test Case #115
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=115
+
+Heirs:
+  - Husband x1
+  - Daughter x2
+  - Father x1
+  - Mother x1
+
+Shares by Category:
+  - Husband                      1/5      20%
+  - Daughter                     8/15     53.33%
+  - Father                       2/15     13.33%
+  - Mother                       2/15     13.33%
+
+Shares by Individual:
+  - Husband                      1/5      20%
+  - Daughter 1                   4/15     26.66%
+  - Daughter 2                   4/15     26.66%
+  - Father                       2/15     13.33%
+  - Mother                       2/15     13.33%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/4 (Rule 1b).
+  2. Daughter gets the prescribed share of 2/3 (Rule 3b).
+  3. Mother gets the prescribed share of 1/6 (Rule 6b).
+  4. Total shares have exceeded 100%. Shares need to be reduced proportionally (Rule 18).

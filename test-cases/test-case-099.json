@@ -1,0 +1,73 @@
+{
+  "id": 99,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=99",
+  "heirs": [
+    {
+      "heir": "Son",
+      "count": 1
+    },
+    {
+      "heir": "Father",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "FullBrother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Son",
+      "fraction": "2/3",
+      "percentage": "66.67%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "0/6",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Son",
+      "fraction": "2/3",
+      "percentage": "66.67%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "Son blocks FullBrother from receiving any share. (Rule 13)",
+    "Father gets the prescribed share of 1/6 (Rule 5a).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Son is the only heir remaining receiving share of 2/3 (Rule 14)."
+  ]
+}

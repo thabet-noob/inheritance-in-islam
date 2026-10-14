@@ -1,0 +1,28 @@
+{
+  "id": 75,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=75",
+  "heirs": [
+    {
+      "heir": "PaternalCousinsGrandSon",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "PaternalCousinsGrandSon",
+      "fraction": "1/1",
+      "percentage": "100%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "PaternalCousinsGrandSon",
+      "fraction": "1",
+      "percentage": "100%"
+    }
+  ],
+  "steps": [
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "PaternalCousinsGrandSon is the only heir remaining receiving share of 1/1 (Rule 14)."
+  ]
+}

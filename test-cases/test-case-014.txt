@@ -1,0 +1,24 @@
+Test Case #14
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=14
+
+Heirs:
+  - PaternalGrandMother x1
+  - FullSister x1
+  - MaternalBrother x1
+
+Shares by Category:
+  - PaternalGrandMother          1/5      20%
+  - FullSister                   3/5      60%
+  - MaternalBrother              1/5      20%
+
+Shares by Individual:
+  - PaternalGrandMother          1/5      20%
+  - FullSister                   3/5      60%
+  - MaternalBrother              1/5      20%
+
+Calculation Steps:
+  1. Paternal Grandmother gets the prescribed share of 1/6 (Rule 8a).
+  2. Full Sister gets the prescribed share of 1/2 (Rule 10a).
+  3. Maternal Brother gets the prescribed share of 1/6 (Rule 12a).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19).

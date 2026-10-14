@@ -1,0 +1,83 @@
+{
+  "id": 65,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=65",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 2
+    },
+    {
+      "heir": "FullSister",
+      "count": 3
+    },
+    {
+      "heir": "PaternalBrother",
+      "count": 3
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "2/3",
+      "percentage": "66.67%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "1/12",
+      "percentage": "8.33%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife 1",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Wife 2",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "FullSister 1",
+      "fraction": "2/9",
+      "percentage": "22.22%"
+    },
+    {
+      "heir": "FullSister 2",
+      "fraction": "2/9",
+      "percentage": "22.22%"
+    },
+    {
+      "heir": "FullSister 3",
+      "fraction": "2/9",
+      "percentage": "22.22%"
+    },
+    {
+      "heir": "PaternalBrother 1",
+      "fraction": "1/36",
+      "percentage": "2.78%"
+    },
+    {
+      "heir": "PaternalBrother 2",
+      "fraction": "1/36",
+      "percentage": "2.78%"
+    },
+    {
+      "heir": "PaternalBrother 3",
+      "fraction": "1/36",
+      "percentage": "2.78%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/4 (Rule 2a).",
+    "Full Sister gets the prescribed share of 2/3 (Rule 10b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "PaternalBrother is the only heir remaining receiving share of 1/12 (Rule 14)."
+  ]
+}

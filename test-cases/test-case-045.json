@@ -1,0 +1,63 @@
+{
+  "id": 45,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=45",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 2
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "FullNephew",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    },
+    {
+      "heir": "FullNephew",
+      "fraction": "5/12",
+      "percentage": "41.67%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife 1",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Wife 2",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    },
+    {
+      "heir": "FullNephew",
+      "fraction": "5/12",
+      "percentage": "41.67%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/4 (Rule 2a).",
+    "Mother gets the prescribed share of 1/3 (Rule 6a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "FullNephew is the only heir remaining receiving share of 5/12 (Rule 14)."
+  ]
+}

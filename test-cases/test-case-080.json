@@ -1,0 +1,59 @@
+{
+  "id": 80,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=80",
+  "heirs": [
+    {
+      "heir": "Husband",
+      "count": 1
+    },
+    {
+      "heir": "PaternalBrother",
+      "count": 1
+    },
+    {
+      "heir": "PaternalSister",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Husband",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    },
+    {
+      "heir": "PaternalSister",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Husband",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    },
+    {
+      "heir": "PaternalSister",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "steps": [
+    "Husband gets the prescribed share of 1/2 (Rule 1a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of PaternalBrother and PaternalSister (Rule 44).",
+    "PaternalBrother and PaternalSister share in the ratio of 2:1 (Rule 15)",
+    "PaternalBrother gets the share of 1/3 and PaternalSister gets the share of 1/6. (Rule 15, 44)"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": 63,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=63",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Daughter",
+      "count": 3
+    },
+    {
+      "heir": "FullBrother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "2/3",
+      "percentage": "66.67%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "5/24",
+      "percentage": "20.83%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Daughter 1",
+      "fraction": "2/9",
+      "percentage": "22.22%"
+    },
+    {
+      "heir": "Daughter 2",
+      "fraction": "2/9",
+      "percentage": "22.22%"
+    },
+    {
+      "heir": "Daughter 3",
+      "fraction": "2/9",
+      "percentage": "22.22%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "5/24",
+      "percentage": "20.83%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/8 (Rule 2b).",
+    "Daughter gets the prescribed share of 2/3 (Rule 3b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "FullBrother is the only heir remaining receiving share of 5/24 (Rule 14)."
+  ]
+}

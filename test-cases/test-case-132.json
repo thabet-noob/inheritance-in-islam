@@ -1,0 +1,90 @@
+{
+  "id": 132,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=132",
+  "heirs": [
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "GrandFather",
+      "count": 1
+    },
+    {
+      "heir": "FullSister",
+      "count": 1
+    },
+    {
+      "heir": "PaternalBrother",
+      "count": 1
+    },
+    {
+      "heir": "PaternalSister",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "GrandFather",
+      "fraction": "5/18",
+      "percentage": "27.78%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "1/27",
+      "percentage": "3.7%"
+    },
+    {
+      "heir": "PaternalSister",
+      "fraction": "1/54",
+      "percentage": "1.85%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "GrandFather",
+      "fraction": "5/18",
+      "percentage": "27.78%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "PaternalBrother",
+      "fraction": "1/27",
+      "percentage": "3.7%"
+    },
+    {
+      "heir": "PaternalSister",
+      "fraction": "1/54",
+      "percentage": "1.85%"
+    }
+  ],
+  "steps": [
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Grandfather gets the prescribed share of 1/6 (Rule 7a).",
+    "Full Sister gets the prescribed share of 1/2 (Rule 10a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Grandfather & siblings case need to be handled as a special case (Rule 23).",
+    "Grandfather is given 1/3 of the residual share. He gets the total share of 5/18 (Rule 23d).",
+    "Paternal Brothers & sisters share the residual share in the ratio of 2:1 (Rule 15).",
+    "Paternal Brothers gets the share of 1/27 and Patenal Sisters gets the share of 1/54. (Rule 15, 23d, 44)"
+  ]
+}

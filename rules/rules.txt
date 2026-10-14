@@ -1,0 +1,250 @@
+
+Rules of Inheritance
+Prescribed Shares
+
+1) Husband [AnNisa 4:12]
+   a. Gets 1/2
+      i. Deceased does not have any offspring
+   b. Gets 1/4
+      i. Deceased has offspring
+
+2) Wife (Divided equally among all wives) [AnNisa 4:12]
+   a. Gets 1/4
+      i. Deceased does not have any offspring
+   b. Gets 1/8
+      i. Deceased has offspring
+
+3) Daughter (Divided equally among all daughters)
+   a. Gets 1/2 [AnNisa 4:11]
+      i. Deceased has only 1 daughter, and [AnNisa 4:11]
+      ii. Deceased does not have any sons [AnNisa 4:11]
+   b. Gets 2/3 [AnNisa 4:11]
+      i. Deceased has multiple daughters, and [AnNisa 4:11]
+      ii. Deceased does not have any sons [AnNisa 4:11]
+
+4) Grand Daughter (from son only)
+   a. Gets 1/2
+      i. Deceased has only 1 Grand daughter from a son
+      ii. Deceased does not have a son or a daughter
+      iii. Deceased does not have a Grandson from a son
+   b. Gets 2/3
+      i. Deceased has multiple Granddaughters from a son
+      ii. Deceased does not have a son or a daughter
+      iii. Deceased does not have a Grandson from a son
+   c. Gets 1/6 (H1)
+      i. Deceased has just one daughter
+      ii. Deceased does not have a son
+      iii. Deceased does not have a Grandson from a son
+
+5) Father [AnNisa 4:11]
+   a. Gets 1/6
+      i. Deceased has offspring
+
+6) Mother [AnNisa 4:11]
+   a. Gets 1/3
+      i. Deceased does not have any offspring, and
+      ii. Deceased does not have multiple siblings (full, paternal, maternal)
+   b. Gets 1/6
+      i. Deceased has offspring, or
+      ii. Deceased has multiple siblings (full, paternal, maternal)
+
+7) Paternal Grand Father
+   a. Gets 1/6
+      i. Deceased does not have a father
+      ii. Deceased has offspring
+
+8) Paternal Grand Mother
+   a. Gets 1/6
+      i. Deceased does not have a mother
+      ii. Deceased does not have a father
+      iii. Deceased does not have a maternal grandmother
+   b. Gets 1/12
+   i. Deceased does not have a mother
+   ii. Deceased does not have a father
+   iii. Deceased has a maternal grandmother
+
+9) Maternal Grand Mother
+   a. Gets 1/6
+      i. Deceased does not have a mother
+   b. Gets 1/12
+      i. Deceased does not have a mother
+      ii. Deceased does not have a father
+      iii. Deceased has a paternal grandmother
+
+10) Full Sister
+   a. Gets ½ [AnNisa 4:176]
+      i. Deceased has only 1 full sister
+      ii. Deceased does not have any offspring
+      iii. Deceased does not have any male paternal ancestor
+      iv. Deceased does not have any full brother
+   b. Gets 2/3 [AnNisa 4:176]
+      i. Deceased has multiple full sisters
+      ii. Deceased does not have any offspring
+      iii. Deceased does not have any male paternal ancestor
+      iv. Deceased does not have any full brother
+
+11) Paternal Sister
+   a. Gets 1/2
+      i. Deceased has only 1 paternal sister
+      ii. Deceased does not have any offspring
+      iii. Deceased does not have any male paternal ancestor
+      iv. Deceased does not have any full brother, full sister or paternal brother
+   b. Gets 2/3
+      i. Deceased has multiple paternal sisters
+      ii. Deceased does not have any offspring
+      iii. Deceased does not have any male paternal ancestor
+      iv. Deceased does not have any full brother, full sister or paternal brother
+   c. Gets 1/6
+      i. Deceased has just 1 full sister
+      ii. Deceased does not have any offspring
+      iii. Deceased does not have any male paternal ancestor
+      iv. Deceased does not have any full brother or paternal brother
+
+12) Maternal Sibling [AnNisa 4:12]
+   a. Gets 1/6
+      i. Deceased has only 1 maternal sibling
+      ii. Deceased does not have any male offspring
+      iii. Deceased does not have any male paternal ancestors
+   b. Gets 1/3
+      i. Deceased has multiple maternal siblings
+      ii. Deceased does not have any male offspring
+      iii. Deceased does not have any male paternal ancestors Residual Shares (H2)
+
+13) Blocking Rules
+   a. Son blocks Paternal Grandson, Paternal Granddaughter, Full brother, Full sister, Paternal brother, Paternal sister, Maternal Brother, Maternal sister, Full Nephew, Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   b. Grandson blocks Full brother, Full sister, Paternal brother, Paternal sister, Maternal Brother, Maternal sister, Full Nephew, Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   c. Father blocks Paternal Grandfather, Paternal Grandmother, Full brother, Full sister, Paternal brother, Paternal sister, Maternal Brother, Maternal sister, Full Nephew, Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   d. Mother blocks Paternal Grandmother, Maternal Grandmother
+   e. Grandfather blocks Full Nephew, Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   f. Full brother blocks Paternal brother, Paternal sister, Full Nephew, Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   g. Full sister blocks Paternal brother, Paternal sister, ,Full Nephew, Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son(can block only if the deceased has at least 1 female offspring, otherwise stuck in 2/3 zone)
+   h. Paternal brother blocks Full Nephew, Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   i. Paternal sister blocks Full Nephew, Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son(can block only if the deceased has either at least 1 female offspring or at least 2 sisters, otherwise stuck in 2/3 zone)
+   j. Full Nephew blocks Paternal Nephew, Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   k. Paternal Nephew blocks Full Nephew’s son, Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   l. Full Nephew’s son blocks Paternal Nephew’s son, Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   m. Paternal Nephew’s son blocks Full paternal Uncle, Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   n. Full paternal Uncle blocks Paternal paternal uncle, Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   o. Paternal paternal uncle blocks Full cousin, Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   p. Full cousin blocks Paternal Cousin, Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   q. Paternal Cousin blocks Full cousin’s son, Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   r. Full cousin’s son blocks Paternal Cousin’s son, Full cousin’s son’s son, Paternal Cousin’s son’s son
+   s. Paternal Cousin’s son blocks Full cousin’s son’s son, Paternal Cousin’s son’s son
+   t. Full cousin’s son’s son blocks Paternal Cousin’s son’s son
+
+14) Tasib ranking in order
+1) Son, daughter 2) Paternal Grandson, paternal Granddaughter 3) Father 4) Full Brother, Full sister (Kalaalah starts here) 5) Paternal Brother, Paternal Sister 6) Paternal Grandfather 7) Full brother’s son 8) Paternal brother’s son 9) Full brother’s son’s son 10) Paternal brother son’s son 11) Paternal uncle (father’s full brother) 12) Paternal paternal uncle (father’s paternal brother) 13) Paternal uncle’s son (father’s brother’s son) 14) Paternal paternal uncle’s son (father’s paternal brother’s son) 15) Paternal uncle’s son’s son (father’s brother’s son’ s son) 16) Paternal paternal uncle’s son’s son (father’s paternal brother’s son’s son) 17) Paternal uncle’s son’s son’s son (father’s brother’s son’ s son’s son) 18) Paternal paternal uncle’s son’s son’s son (father’s paternal brother’s son’s son’s son) 19) Emancipator 20) Emancipator’s independent Aaseebs
+
+15) A male & female of the same class receive shares with the ration of 2:1 [AnNisa 4:11], [AnNisa 4:176]. The following conditions should be met.
+   a. Male & female are of the same class
+   b. This rule applies during the distribution of residual shares, and not the distribution of prescribed shares
+   c. This rule doesn’t apply to maternal siblings. They are either ways given from prescribed shares
+
+16) If an heir is given the prescribed share, he/she drops from Ta’seeb if there are other Aaseebs qualified for inheritance a. Father is an exception to this rule
+
+17) A father, or a grandfather, can never be cutoff by the heirs with prescribed shares.
+
+
+18) In the ‘Awal case, when the total is more than 1, all shares should be reduced proportionately so that the total shares is 1
+   a. In case of Awal, and in the presence of Grandfather, sisters will be removed from the 2/3rd zone. Grandfather & sisters then will divide in the ratio of 2:1. (Disturbing Case) )
+
+19) In Radd case, when the total is less than 1, all shares, except the shares of the spouse, should be increased proportionately so that the total share is 1. The spouse shares are strictly fixed. They cannot be increased unless no far relatives are found.
+
+
+20) If husband is also a paternal cousin (or his offspring), or an emancipator (or his relative), he should be treated as two individuals and distribution should be made for each (if qualified)
+
+21) If the deceased left behind a spouse, a father and a mother, but no offspring & multiple siblings, Umar’s calculations need to be applied. (Umar’s Fatawa)
+   a. Parents will not get their prescribed share
+   b. Parents will share the remainder with the 2:1 ratio for father & mother
+   c. Multiple siblings can reduce mother’s share so Umar’s case will no longer be valid
+
+22) A full brother cannot receive less than the maternal brother
+   a. Full brothers should share equally with the maternal siblings. Effectively, full brothers are treated as maternal siblings.
+   b. This doesn’t apply to paternal brother (becoming maternal brother)
+
+23) If the deceased did not leave behind a father or offspring, but left behind at least grandfather & siblings, he has a special case
+   a. A=1/6 of the estate
+   b. B=1/3 of the remainder of shares
+   c. C=Treat grandfather like a brother and divide the shares equally among them
+   d. The grandfather will be given the maximum of A, B and C
+   e. If the grandfather’s share is causing the total shares to exceed 1, then the regular share of 1/6 will be given and the max of A, B, C rule will be ignored
+   f. If the fractions sum exceeds 1, Awal should be applied; Grandfather’s share is not Ta’seeb in this case.
+   g. During this calculation, Full Sister & paternal sister ‘s share should be excluded (if they are in 2/3rd zone)
+
+24) If the deceased did not leave behind a father or offspring or brother, but left behind at least a grandfather and a sister. If a sister gets more than grandfather, then the shares should be readjusted
+   a. Discard the prescribed share of the sister
+   b. Sister & grandfather should share the remainder of estate with the ratio 1:2 Far Relatives
+
+25) Divide the inheritance to non-standard far relatives replacing themselves with the link they are attached to who is qualified for the inheritance..
+
+26) If there is still a remainder, then the remaining can now be given to the spouse if alive
+
+27) If the deceased has obsoletely no relatives, the Islamic state takes the entire estate.
+
+28) In case of female heirs, the inheritance stops at them and does not move on to their children as in case of male heirs.
+
+29) In the absence of immediate children, grandchildren replace them as heirs
+
+30) The 2/3 zone
+   a. Certain female relatives can get into this zone
+   b. The 4 possible relatives in this zone are – daughter, paternal granddaughter, full sister, paternal sister
+   c. When a heir is inside this zone, she cannot block any body
+   d. The male sibling of the same class can get her out of the 2/3 zone
+      i. Son for the daughter
+      ii. Paternal grandson for the paternal granddaughter
+      iii. Full brother for the full sister
+      iv. Paternal brother for the paternal sister
+   e. Female offspring can never be together with female siblings in the 2/3 zone. The female offspring can get the female siblings out of the 2/3 zone
+   f. Daughter & granddaughter cannot be given the same share when in 2/3 zone. Same applies for full sister & paternal sister. One is given ½ & the other is given 1/6.
+   g. Full brother can get the paternal sister out of 2/3 zone, actually completely blocks her.
+
+31) The 2/3 fraction is either for daughter-granddaughter, or, full sister-paternal sister. The 2/3 can never be shared between female offspring & female siblings
+
+32) Maternal siblings can reduce mother’s share
+
+33) Maternal siblings do not have 1:2 male female ratio
+
+34) Father blocks full siblings, paternal siblings, and maternal siblings
+
+35) Following relatives can never be blocked
+   • Husband
+   • Wife
+   • Father
+   • Mother
+   • Son
+   • Daughter
+
+36) Spouse can neither be blocked, nor can they block any body
+
+37) Spouse share can never be increased, even if there are no more standard heirs left. The far relatives are given priority first before increasing spouse’s share are
+
+38) Role promotion when the person is not alive
+   • Grandfather becomes a father
+   • Paternal grandmother becomes a mother
+   • Granddaughter become a daughter
+   • Sister becomes a daughter
+   • Paternal sister becomes a daughter
+
+39) Maternal grandfather (mother’s father) is blocked from inheritance. His both male & female ancestors are also blocked. This is different from maternal grandmother (mother’s mother). She gets the inheritance. Also, her female ancestors can also get inheritance, but not the male ancestors.
+
+40) The only female chain that continues indefinitely is mother’s mother’s mother’s ….
+
+41) There is a difference of opinion on father blocking the father’s mother. However, all agree that a mother can block father’s mother.
+
+42) There is some difference of opinion on grandfather blocking the siblings
+
+43) Following relatives are not qualified for Ta’seeb
+   • Mother
+   • Paternal grandmother
+   • Maternal grandmother
+   • Husband
+   • Wife
+   • Maternal Brother
+   • Maternal Sister
+
+44) Joint Ta’seebs are possible only for the following casess
+   • Son & daughter
+   • Grandson & Grand daughter
+   • Full brother & full sister
+   • Paternal brother & paternal sister
+ 

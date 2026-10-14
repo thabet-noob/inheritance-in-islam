@@ -1,0 +1,43 @@
+{
+  "id": 50,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=50",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Father",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "3/4",
+      "percentage": "75%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "3/4",
+      "percentage": "75%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/4 (Rule 2a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Father is the only heir remaining receiving share of 3/4 (Rule 14)."
+  ]
+}

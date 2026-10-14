@@ -1,0 +1,57 @@
+{
+  "id": 126,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=126",
+  "heirs": [
+    {
+      "heir": "Husband",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "GrandFather",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Husband",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    },
+    {
+      "heir": "GrandFather",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Husband",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/3",
+      "percentage": "33.33%"
+    },
+    {
+      "heir": "GrandFather",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "steps": [
+    "Husband gets the prescribed share of 1/2 (Rule 1a).",
+    "Mother gets the prescribed share of 1/3 (Rule 6a).",
+    "Grandfather gets the prescribed share of 1/6 (Rule 7a)."
+  ]
+}

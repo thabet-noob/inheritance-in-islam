@@ -1,0 +1,27 @@
+Test Case #124
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=124
+
+Heirs:
+  - Husband x1
+  - PaternalGrandMother x1
+  - MaternalBrother x1
+  - PaternalCousin x1
+
+Shares by Category:
+  - Husband                      1/2      50%
+  - PaternalGrandMother          1/6      16.67%
+  - MaternalBrother              1/6      16.67%
+  - PaternalCousin               1/6      16.67%
+
+Shares by Individual:
+  - Husband                      1/2      50%
+  - PaternalGrandMother          1/6      16.67%
+  - MaternalBrother              1/6      16.67%
+  - PaternalCousin               1/6      16.67%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/2 (Rule 1a).
+  2. Paternal Grandmother gets the prescribed share of 1/6 (Rule 8a).
+  3. Maternal Brother gets the prescribed share of 1/6 (Rule 12a).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. PaternalCousin is the only heir remaining receiving share of 1/6 (Rule 14).

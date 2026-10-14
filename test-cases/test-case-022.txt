@@ -1,0 +1,27 @@
+Test Case #22
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=22
+
+Heirs:
+  - Son x1
+  - Mother x1
+  - PaternalGrandMother x1
+  - FullUncle x1
+
+Shares by Category:
+  - Son                          5/6      83.33%
+  - Mother                       1/6      16.67%
+  - PaternalGrandMother          0/6      0%
+  - FullUncle                    0/6      0%
+
+Shares by Individual:
+  - Son                          5/6      83.33%
+  - Mother                       1/6      16.67%
+  - PaternalGrandMother          0        0%
+  - FullUncle                    0        0%
+
+Calculation Steps:
+  1. Son blocks FullUncle from receiving any share. (Rule 13)
+  2. Mother blocks PaternalGrandMother from receiving any share. (Rule 13)
+  3. Mother gets the prescribed share of 1/6 (Rule 6b).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. Son is the only heir remaining receiving share of 5/6 (Rule 14).

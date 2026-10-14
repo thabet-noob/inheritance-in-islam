@@ -1,0 +1,23 @@
+Test Case #56
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=56
+
+Heirs:
+  - Husband x1
+  - Mother x1
+  - FullBrother x1
+
+Shares by Category:
+  - Husband                      1/2      50%
+  - Mother                       1/3      33.33%
+  - FullBrother                  1/6      16.67%
+
+Shares by Individual:
+  - Husband                      1/2      50%
+  - Mother                       1/3      33.33%
+  - FullBrother                  1/6      16.67%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/2 (Rule 1a).
+  2. Mother gets the prescribed share of 1/3 (Rule 6a).
+  3. Distribute the remaining shares according to relative priority (Rule 14)
+  4. FullBrother is the only heir remaining receiving share of 1/6 (Rule 14).

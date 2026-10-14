@@ -1,0 +1,22 @@
+Test Case #89
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=89
+
+Heirs:
+  - GrandDaughter x2
+  - FullSister x3
+
+Shares by Category:
+  - GrandDaughter                2/3      66.67%
+  - FullSister                   1/3      33.33%
+
+Shares by Individual:
+  - GrandDaughter 1              1/3      33.34%
+  - GrandDaughter 2              1/3      33.34%
+  - FullSister 1                 1/9      11.11%
+  - FullSister 2                 1/9      11.11%
+  - FullSister 3                 1/9      11.11%
+
+Calculation Steps:
+  1. Daughter gets the prescribed share of 2/3 (Rule 4b).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. FullSister is the only heir remaining receiving share of 1/3 (Rule 14).

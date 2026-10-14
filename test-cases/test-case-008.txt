@@ -1,0 +1,20 @@
+Test Case #8
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=8
+
+Heirs:
+  - Husband x1
+  - FullSister x2
+
+Shares by Category:
+  - Husband                      3/7      42.86%
+  - FullSister                   4/7      57.14%
+
+Shares by Individual:
+  - Husband                      3/7      42.86%
+  - FullSister 1                 2/7      28.57%
+  - FullSister 2                 2/7      28.57%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/2 (Rule 1a).
+  2. Full Sister gets the prescribed share of 2/3 (Rule 10b).
+  3. Total shares have exceeded 100%. Shares need to be reduced proportionally (Rule 18).

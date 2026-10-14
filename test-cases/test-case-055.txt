@@ -1,0 +1,23 @@
+Test Case #55
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=55
+
+Heirs:
+  - Wife x1
+  - Daughter x1
+  - Father x1
+
+Shares by Category:
+  - Wife                         1/8      12.5%
+  - Daughter                     1/2      50%
+  - Father                       3/8      37.5%
+
+Shares by Individual:
+  - Wife                         1/8      12.5%
+  - Daughter                     1/2      50%
+  - Father                       3/8      37.5%
+
+Calculation Steps:
+  1. Wife gets the prescribed share of 1/8 (Rule 2b).
+  2. Daughter gets the prescribed share of 1/2 (Rule 3a).
+  3. Distribute the remaining shares according to relative priority (Rule 14)
+  4. Father is the only heir remaining receiving share of 3/8 (Rule 14).

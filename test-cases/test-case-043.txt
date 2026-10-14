@@ -1,0 +1,20 @@
+Test Case #43
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=43
+
+Heirs:
+  - Mother x1
+  - FullBrother x2
+
+Shares by Category:
+  - Mother                       1/6      16.67%
+  - FullBrother                  5/6      83.33%
+
+Shares by Individual:
+  - Mother                       1/6      16.67%
+  - FullBrother 1                5/12     41.66%
+  - FullBrother 2                5/12     41.66%
+
+Calculation Steps:
+  1. Mother gets the prescribed share of 1/6 (Rule 6b).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. FullBrother is the only heir remaining receiving share of 5/6 (Rule 14).

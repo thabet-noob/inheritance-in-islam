@@ -1,0 +1,24 @@
+Test Case #84
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=84
+
+Heirs:
+  - Husband x1
+  - FullSister x1
+  - PaternalBrother x1
+  - PaternalSister x1
+
+Shares by Category:
+  - Husband                      1/2      50%
+  - FullSister                   1/2      50%
+  - PaternalBrother              0/2      0%
+  - PaternalSister               0/2      0%
+
+Shares by Individual:
+  - Husband                      1/2      50%
+  - FullSister                   1/2      50%
+  - PaternalBrother              0        0%
+  - PaternalSister               0        0%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/2 (Rule 1a).
+  2. Full Sister gets the prescribed share of 1/2 (Rule 10a).

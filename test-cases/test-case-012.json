@@ -1,0 +1,34 @@
+{
+  "id": 12,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=12",
+  "heirs": [
+    {
+      "heir": "Daughter",
+      "count": 2
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Daughter",
+      "fraction": "1/1",
+      "percentage": "100%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Daughter 1",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "Daughter 2",
+      "fraction": "1/2",
+      "percentage": "50%"
+    }
+  ],
+  "steps": [
+    "Daughter gets the prescribed share of 2/3 (Rule 3b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19)."
+  ]
+}

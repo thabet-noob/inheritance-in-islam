@@ -1,0 +1,25 @@
+Test Case #71
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=71
+
+Heirs:
+  - Mother x1
+  - FullBrother x1
+  - FullSister x2
+
+Shares by Category:
+  - Mother                       1/6      16.67%
+  - FullBrother                  5/12     41.67%
+  - FullSister                   5/12     41.67%
+
+Shares by Individual:
+  - Mother                       1/6      16.67%
+  - FullBrother                  5/12     41.67%
+  - FullSister 1                 5/24     20.84%
+  - FullSister 2                 5/24     20.84%
+
+Calculation Steps:
+  1. Mother gets the prescribed share of 1/6 (Rule 6b).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. Joint Ta'seeb of FullBrother and FullSister (Rule 44).
+  4. FullBrother and FullSister share in the ratio of 2:1 (Rule 15)
+  5. FullBrother gets the share of 5/12 and FullSister gets the share of 5/12. (Rule 15, 44)

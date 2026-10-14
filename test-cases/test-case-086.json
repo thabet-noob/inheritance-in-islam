@@ -1,0 +1,89 @@
+{
+  "id": 86,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=86",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "GrandSon",
+      "count": 1
+    },
+    {
+      "heir": "GrandDaughter",
+      "count": 1
+    },
+    {
+      "heir": "Father",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "GrandSon",
+      "fraction": "13/36",
+      "percentage": "36.11%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "13/72",
+      "percentage": "18.06%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "GrandSon",
+      "fraction": "13/36",
+      "percentage": "36.11%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "13/72",
+      "percentage": "18.06%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/8 (Rule 2b).",
+    "Father gets the prescribed share of 1/6 (Rule 5a).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of GrandSon and GrandDaughter (Rule 44).",
+    "GrandSon and GrandDaughter share in the ratio of 2:1 (Rule 15)",
+    "GrandSon gets the share of 13/36 and GrandDaughter gets the share of 13/72. (Rule 15, 44)"
+  ]
+}

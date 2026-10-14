@@ -1,0 +1,93 @@
+{
+  "id": 105,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=105",
+  "heirs": [
+    {
+      "heir": "Daughter",
+      "count": 1
+    },
+    {
+      "heir": "GrandDaughter",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "PaternalSister",
+      "count": 2
+    },
+    {
+      "heir": "FullUncle",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Daughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "PaternalSister",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullUncle",
+      "fraction": "0/6",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Daughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "PaternalSister 1",
+      "fraction": "1/12",
+      "percentage": "8.34%"
+    },
+    {
+      "heir": "PaternalSister 2",
+      "fraction": "1/12",
+      "percentage": "8.34%"
+    },
+    {
+      "heir": "FullUncle",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "PaternalSister blocks FullUncle from receiving any share. (Rule 13)",
+    "Daughter gets the prescribed share of 1/2 (Rule 3a).",
+    "Daughter gets the prescribed share of 1/6 (Rule 4c).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "PaternalSister is the only heir remaining receiving share of 1/6 (Rule 14)."
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": 124,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=124",
+  "heirs": [
+    {
+      "heir": "Husband",
+      "count": 1
+    },
+    {
+      "heir": "PaternalGrandMother",
+      "count": 1
+    },
+    {
+      "heir": "MaternalBrother",
+      "count": 1
+    },
+    {
+      "heir": "PaternalCousin",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Husband",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "PaternalGrandMother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "MaternalBrother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "PaternalCousin",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Husband",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "PaternalGrandMother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "MaternalBrother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "PaternalCousin",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    }
+  ],
+  "steps": [
+    "Husband gets the prescribed share of 1/2 (Rule 1a).",
+    "Paternal Grandmother gets the prescribed share of 1/6 (Rule 8a).",
+    "Maternal Brother gets the prescribed share of 1/6 (Rule 12a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "PaternalCousin is the only heir remaining receiving share of 1/6 (Rule 14)."
+  ]
+}

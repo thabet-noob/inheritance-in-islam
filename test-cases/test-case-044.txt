@@ -1,0 +1,23 @@
+Test Case #44
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=44
+
+Heirs:
+  - Mother x1
+  - PaternalBrother x1
+  - MaternalBrother x1
+
+Shares by Category:
+  - Mother                       1/6      16.67%
+  - PaternalBrother              2/3      66.67%
+  - MaternalBrother              1/6      16.67%
+
+Shares by Individual:
+  - Mother                       1/6      16.67%
+  - PaternalBrother              2/3      66.67%
+  - MaternalBrother              1/6      16.67%
+
+Calculation Steps:
+  1. Mother gets the prescribed share of 1/6 (Rule 6b).
+  2. Maternal Brother gets the prescribed share of 1/6 (Rule 12a).
+  3. Distribute the remaining shares according to relative priority (Rule 14)
+  4. PaternalBrother is the only heir remaining receiving share of 2/3 (Rule 14).

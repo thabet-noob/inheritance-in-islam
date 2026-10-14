@@ -1,0 +1,41 @@
+Test Case #106
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=106
+
+Heirs:
+  - Husband x1
+  - Son x2
+  - Daughter x1
+  - Father x1
+  - Mother x1
+  - GrandFather x1
+  - FullBrother x1
+
+Shares by Category:
+  - Husband                      1/4      25%
+  - Son                          1/3      33.33%
+  - Daughter                     1/12     8.33%
+  - Father                       1/6      16.67%
+  - Mother                       1/6      16.67%
+  - GrandFather                  0/12     0%
+  - FullBrother                  0/12     0%
+
+Shares by Individual:
+  - Husband                      1/4      25%
+  - Son 1                        1/6      16.66%
+  - Son 2                        1/6      16.66%
+  - Daughter                     1/12     8.33%
+  - Father                       1/6      16.67%
+  - Mother                       1/6      16.67%
+  - GrandFather                  0        0%
+  - FullBrother                  0        0%
+
+Calculation Steps:
+  1. Son blocks FullBrother from receiving any share. (Rule 13)
+  2. Father blocks GrandFather from receiving any share. (Rule 13)
+  3. Husband gets the prescribed share of 1/4 (Rule 1b).
+  4. Father gets the prescribed share of 1/6 (Rule 5a).
+  5. Mother gets the prescribed share of 1/6 (Rule 6b).
+  6. Distribute the remaining shares according to relative priority (Rule 14)
+  7. Joint Ta'seeb of Son and Daughter (Rule 44).
+  8. Son and Daughter share in the ratio of 2:1 (Rule 15)
+  9. Son gets the share of 1/3 and Daughter gets the share of 1/12. (Rule 15, 44)

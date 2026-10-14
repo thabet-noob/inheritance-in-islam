@@ -1,0 +1,14 @@
+Test Case #29
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=29
+
+Heirs:
+  (none)
+
+Shares by Category:
+  (none)
+
+Shares by Individual:
+  (none)
+
+Calculation Steps:
+  (none)

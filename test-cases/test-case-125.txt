@@ -1,0 +1,28 @@
+Test Case #125
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=125
+
+Heirs:
+  - Wife x1
+  - Father x1
+  - Mother x1
+  - MaternalBrother x2
+
+Shares by Category:
+  - Wife                         1/4      25%
+  - Father                       7/12     58.33%
+  - Mother                       1/6      16.67%
+  - MaternalBrother              0/12     0%
+
+Shares by Individual:
+  - Wife                         1/4      25%
+  - Father                       7/12     58.33%
+  - Mother                       1/6      16.67%
+  - MaternalBrother 1            0        0%
+  - MaternalBrother 2            0        0%
+
+Calculation Steps:
+  1. Father blocks MaternalBrother from receiving any share. (Rule 13)
+  2. Wife gets the prescribed share of 1/4 (Rule 2a).
+  3. Mother gets the prescribed share of 1/6 (Rule 6b).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. Father is the only heir remaining receiving share of 7/12 (Rule 14).

@@ -1,0 +1,22 @@
+Test Case #76
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=76
+
+Heirs:
+  - Son x3
+  - Daughter x1
+
+Shares by Category:
+  - Son                          6/7      85.71%
+  - Daughter                     1/7      14.29%
+
+Shares by Individual:
+  - Son 1                        2/7      28.57%
+  - Son 2                        2/7      28.57%
+  - Son 3                        2/7      28.57%
+  - Daughter                     1/7      14.29%
+
+Calculation Steps:
+  1. Distribute the remaining shares according to relative priority (Rule 14)
+  2. Joint Ta'seeb of Son and Daughter (Rule 44).
+  3. Son and Daughter share in the ratio of 2:1 (Rule 15)
+  4. Son gets the share of 6/7 and Daughter gets the share of 1/7. (Rule 15, 44)

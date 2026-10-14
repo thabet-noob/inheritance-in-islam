@@ -1,0 +1,24 @@
+Test Case #38
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=38
+
+Heirs:
+  - Father x1
+  - Mother x1
+  - FullSister x2
+
+Shares by Category:
+  - Father                       5/6      83.33%
+  - Mother                       1/6      16.67%
+  - FullSister                   0/6      0%
+
+Shares by Individual:
+  - Father                       5/6      83.33%
+  - Mother                       1/6      16.67%
+  - FullSister 1                 0        0%
+  - FullSister 2                 0        0%
+
+Calculation Steps:
+  1. Father blocks FullSister from receiving any share. (Rule 13)
+  2. Mother gets the prescribed share of 1/6 (Rule 6b).
+  3. Distribute the remaining shares according to relative priority (Rule 14)
+  4. Father is the only heir remaining receiving share of 5/6 (Rule 14).

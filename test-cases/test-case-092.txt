@@ -1,0 +1,28 @@
+Test Case #92
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=92
+
+Heirs:
+  - Daughter x1
+  - GrandDaughter x1
+  - Mother x1
+  - PaternalSister x2
+
+Shares by Category:
+  - Daughter                     1/2      50%
+  - GrandDaughter                1/6      16.67%
+  - Mother                       1/6      16.67%
+  - PaternalSister               1/6      16.67%
+
+Shares by Individual:
+  - Daughter                     1/2      50%
+  - GrandDaughter                1/6      16.67%
+  - Mother                       1/6      16.67%
+  - PaternalSister 1             1/12     8.34%
+  - PaternalSister 2             1/12     8.34%
+
+Calculation Steps:
+  1. Daughter gets the prescribed share of 1/2 (Rule 3a).
+  2. Daughter gets the prescribed share of 1/6 (Rule 4c).
+  3. Mother gets the prescribed share of 1/6 (Rule 6b).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. PaternalSister is the only heir remaining receiving share of 1/6 (Rule 14).

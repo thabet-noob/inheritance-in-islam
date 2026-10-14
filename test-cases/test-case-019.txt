@@ -1,0 +1,24 @@
+Test Case #19
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=19
+
+Heirs:
+  - Wife x1
+  - Mother x1
+  - MaternalBrother x1
+
+Shares by Category:
+  - Wife                         1/4      25%
+  - Mother                       1/2      50%
+  - MaternalBrother              1/4      25%
+
+Shares by Individual:
+  - Wife                         1/4      25%
+  - Mother                       1/2      50%
+  - MaternalBrother              1/4      25%
+
+Calculation Steps:
+  1. Wife gets the prescribed share of 1/4 (Rule 2a).
+  2. Mother gets the prescribed share of 1/3 (Rule 6a).
+  3. Maternal Brother gets the prescribed share of 1/6 (Rule 12a).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19).

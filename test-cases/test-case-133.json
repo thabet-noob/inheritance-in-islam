@@ -1,0 +1,87 @@
+{
+  "id": 133,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=133",
+  "heirs": [
+    {
+      "heir": "Husband",
+      "count": 1
+    },
+    {
+      "heir": "Daughter",
+      "count": 1
+    },
+    {
+      "heir": "GrandDaughter",
+      "count": 1
+    },
+    {
+      "heir": "GrandFather",
+      "count": 1
+    },
+    {
+      "heir": "FullBrother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Husband",
+      "fraction": "3/13",
+      "percentage": "23.08%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "6/13",
+      "percentage": "46.15%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "2/13",
+      "percentage": "15.38%"
+    },
+    {
+      "heir": "GrandFather",
+      "fraction": "2/13",
+      "percentage": "15.38%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "0/156",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Husband",
+      "fraction": "3/13",
+      "percentage": "23.08%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "6/13",
+      "percentage": "46.15%"
+    },
+    {
+      "heir": "GrandDaughter",
+      "fraction": "2/13",
+      "percentage": "15.38%"
+    },
+    {
+      "heir": "GrandFather",
+      "fraction": "2/13",
+      "percentage": "15.38%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "Husband gets the prescribed share of 1/4 (Rule 1b).",
+    "Daughter gets the prescribed share of 1/2 (Rule 3a).",
+    "Daughter gets the prescribed share of 1/6 (Rule 4c).",
+    "Grandfather gets the prescribed share of 1/6 (Rule 7a).",
+    "Total shares have exceeded 100%. Shares need to be reduced proportionally (Rule 18)."
+  ]
+}

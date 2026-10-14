@@ -1,0 +1,28 @@
+Test Case #127
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=127
+
+Heirs:
+  - Husband x1
+  - Mother x1
+  - PaternalBrother x2
+  - MaternalBrother x2
+
+Shares by Category:
+  - Husband                      1/2      50%
+  - Mother                       1/6      16.67%
+  - PaternalBrother              0/6      0%
+  - MaternalBrother              1/3      33.33%
+
+Shares by Individual:
+  - Husband                      1/2      50%
+  - Mother                       1/6      16.67%
+  - PaternalBrother 1            0        0%
+  - PaternalBrother 2            0        0%
+  - MaternalBrother 1            1/3      16.66%
+  - MaternalBrother 2            1/3      16.66%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/2 (Rule 1a).
+  2. Mother gets the prescribed share of 1/6 (Rule 6b).
+  3. Maternal Siblings gets the prescribed share of 1/3 (Rule 12b).
+  4. Maternal Brothers gets 1/6 & Maternal Sisters gets 1/6 - the ratio 1:1 (Rule 33).

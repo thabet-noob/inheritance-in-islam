@@ -1,0 +1,19 @@
+Test Case #30
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=30
+
+Heirs:
+  - Husband x1
+  - Son x1
+
+Shares by Category:
+  - Husband                      1/4      25%
+  - Son                          3/4      75%
+
+Shares by Individual:
+  - Husband                      1/4      25%
+  - Son                          3/4      75%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/4 (Rule 1b).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. Son is the only heir remaining receiving share of 3/4 (Rule 14).

@@ -1,0 +1,21 @@
+Test Case #64
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=64
+
+Heirs:
+  - Daughter x3
+  - PaternalUncle x1
+
+Shares by Category:
+  - Daughter                     2/3      66.67%
+  - PaternalUncle                1/3      33.33%
+
+Shares by Individual:
+  - Daughter 1                   2/9      22.22%
+  - Daughter 2                   2/9      22.22%
+  - Daughter 3                   2/9      22.22%
+  - PaternalUncle                1/3      33.33%
+
+Calculation Steps:
+  1. Daughter gets the prescribed share of 2/3 (Rule 3b).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. PaternalUncle is the only heir remaining receiving share of 1/3 (Rule 14).

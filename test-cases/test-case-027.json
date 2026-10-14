@@ -1,0 +1,89 @@
+{
+  "id": 27,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=27",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Son",
+      "count": 1
+    },
+    {
+      "heir": "Daughter",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "FullUncle",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Son",
+      "fraction": "17/36",
+      "percentage": "47.22%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "17/72",
+      "percentage": "23.61%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullUncle",
+      "fraction": "0/72",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Son",
+      "fraction": "17/36",
+      "percentage": "47.22%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "17/72",
+      "percentage": "23.61%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/6",
+      "percentage": "16.67%"
+    },
+    {
+      "heir": "FullUncle",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "Son blocks FullUncle from receiving any share. (Rule 13)",
+    "Wife gets the prescribed share of 1/8 (Rule 2b).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of Son and Daughter (Rule 44).",
+    "Son and Daughter share in the ratio of 2:1 (Rule 15)",
+    "Son gets the share of 17/36 and Daughter gets the share of 17/72. (Rule 15, 44)"
+  ]
+}

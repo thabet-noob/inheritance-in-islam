@@ -1,0 +1,73 @@
+{
+  "id": 94,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=94",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Daughter",
+      "count": 1
+    },
+    {
+      "heir": "FullBrother",
+      "count": 1
+    },
+    {
+      "heir": "FullUncle",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    },
+    {
+      "heir": "FullUncle",
+      "fraction": "0/8",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    },
+    {
+      "heir": "FullUncle",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "FullBrother blocks FullUncle from receiving any share. (Rule 13)",
+    "Wife gets the prescribed share of 1/8 (Rule 2b).",
+    "Daughter gets the prescribed share of 1/2 (Rule 3a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "FullBrother is the only heir remaining receiving share of 3/8 (Rule 14)."
+  ]
+}

@@ -1,0 +1,58 @@
+{
+  "id": 108,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=108",
+  "heirs": [
+    {
+      "heir": "Husband",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    },
+    {
+      "heir": "FullSister",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Husband",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Husband",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "3/8",
+      "percentage": "37.5%"
+    }
+  ],
+  "steps": [
+    "Husband gets the prescribed share of 1/2 (Rule 1a).",
+    "Mother gets the prescribed share of 1/3 (Rule 6a).",
+    "Full Sister gets the prescribed share of 1/2 (Rule 10a).",
+    "Total shares have exceeded 100%. Shares need to be reduced proportionally (Rule 18)."
+  ]
+}

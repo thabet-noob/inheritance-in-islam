@@ -1,0 +1,27 @@
+Test Case #87
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=87
+
+Heirs:
+  - Husband x1
+  - Daughter x1
+  - Mother x1
+  - FullSister x1
+
+Shares by Category:
+  - Husband                      1/4      25%
+  - Daughter                     1/2      50%
+  - Mother                       1/6      16.67%
+  - FullSister                   1/12     8.33%
+
+Shares by Individual:
+  - Husband                      1/4      25%
+  - Daughter                     1/2      50%
+  - Mother                       1/6      16.67%
+  - FullSister                   1/12     8.33%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/4 (Rule 1b).
+  2. Daughter gets the prescribed share of 1/2 (Rule 3a).
+  3. Mother gets the prescribed share of 1/6 (Rule 6b).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. FullSister is the only heir remaining receiving share of 1/12 (Rule 14).

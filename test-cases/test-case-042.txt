@@ -1,0 +1,23 @@
+Test Case #42
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=42
+
+Heirs:
+  - Husband x1
+  - GrandDaughter x1
+  - FullCousin x1
+
+Shares by Category:
+  - Husband                      1/4      25%
+  - GrandDaughter                1/2      50%
+  - FullCousin                   1/4      25%
+
+Shares by Individual:
+  - Husband                      1/4      25%
+  - GrandDaughter                1/2      50%
+  - FullCousin                   1/4      25%
+
+Calculation Steps:
+  1. Husband gets the prescribed share of 1/4 (Rule 1b).
+  2. Daughter gets the prescribed share of 1/2 (Rule 4a).
+  3. Distribute the remaining shares according to relative priority (Rule 14)
+  4. FullCousin is the only heir remaining receiving share of 1/4 (Rule 14).

@@ -1,0 +1,23 @@
+Test Case #130
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=130
+
+Heirs:
+  - GrandFather x1
+  - FullBrother x3
+
+Shares by Category:
+  - GrandFather                  1/3      33.33%
+  - FullBrother                  2/3      66.67%
+
+Shares by Individual:
+  - GrandFather                  1/3      33.33%
+  - FullBrother 1                2/9      22.22%
+  - FullBrother 2                2/9      22.22%
+  - FullBrother 3                2/9      22.22%
+
+Calculation Steps:
+  1. Grandfather gets the prescribed share of 1/6 (Rule 7a).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. Grandfather & siblings case need to be handled as a special case (Rule 23).
+  4. Grandfather is given 1/3 of the residual share. He gets the total share of 1/3 (Rule 23d).
+  5. Full Brothers gets the remaining residual share of 2/3 (Rule 23c).

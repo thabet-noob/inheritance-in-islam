@@ -1,0 +1,77 @@
+{
+  "id": 117,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=117",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 1
+    },
+    {
+      "heir": "Daughter",
+      "count": 2
+    },
+    {
+      "heir": "Father",
+      "count": 1
+    },
+    {
+      "heir": "Mother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/9",
+      "percentage": "11.11%"
+    },
+    {
+      "heir": "Daughter",
+      "fraction": "16/27",
+      "percentage": "59.26%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "4/27",
+      "percentage": "14.81%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "4/27",
+      "percentage": "14.81%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife",
+      "fraction": "1/9",
+      "percentage": "11.11%"
+    },
+    {
+      "heir": "Daughter 1",
+      "fraction": "8/27",
+      "percentage": "29.63%"
+    },
+    {
+      "heir": "Daughter 2",
+      "fraction": "8/27",
+      "percentage": "29.63%"
+    },
+    {
+      "heir": "Father",
+      "fraction": "4/27",
+      "percentage": "14.81%"
+    },
+    {
+      "heir": "Mother",
+      "fraction": "4/27",
+      "percentage": "14.81%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/8 (Rule 2b).",
+    "Daughter gets the prescribed share of 2/3 (Rule 3b).",
+    "Mother gets the prescribed share of 1/6 (Rule 6b).",
+    "Total shares have exceeded 100%. Shares need to be reduced proportionally (Rule 18)."
+  ]
+}

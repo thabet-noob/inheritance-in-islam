@@ -1,0 +1,48 @@
+{
+  "id": 3,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=3",
+  "heirs": [
+    {
+      "heir": "Daughter",
+      "count": 1
+    },
+    {
+      "heir": "FullSister",
+      "count": 2
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Daughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "1/2",
+      "percentage": "50%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Daughter",
+      "fraction": "1/2",
+      "percentage": "50%"
+    },
+    {
+      "heir": "FullSister 1",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "FullSister 2",
+      "fraction": "1/4",
+      "percentage": "25%"
+    }
+  ],
+  "steps": [
+    "Daughter gets the prescribed share of 1/2 (Rule 3a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "FullSister is the only heir remaining receiving share of 1/2 (Rule 14)."
+  ]
+}

@@ -1,0 +1,32 @@
+Test Case #97
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=97
+
+Heirs:
+  - Wife x2
+  - Daughter x1
+  - Father x1
+  - GrandFather x1
+  - FullBrother x1
+
+Shares by Category:
+  - Wife                         1/8      12.5%
+  - Daughter                     1/2      50%
+  - Father                       3/8      37.5%
+  - GrandFather                  0/24     0%
+  - FullBrother                  0/24     0%
+
+Shares by Individual:
+  - Wife 1                       1/16     6.25%
+  - Wife 2                       1/16     6.25%
+  - Daughter                     1/2      50%
+  - Father                       3/8      37.5%
+  - GrandFather                  0        0%
+  - FullBrother                  0        0%
+
+Calculation Steps:
+  1. Father blocks GrandFather from receiving any share. (Rule 13)
+  2. Father blocks FullBrother from receiving any share. (Rule 13)
+  3. Wife gets the prescribed share of 1/8 (Rule 2b).
+  4. Daughter gets the prescribed share of 1/2 (Rule 3a).
+  5. Distribute the remaining shares according to relative priority (Rule 14)
+  6. Father is the only heir remaining receiving share of 3/8 (Rule 14).

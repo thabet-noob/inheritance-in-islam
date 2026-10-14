@@ -1,0 +1,17 @@
+Test Case #12
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=12
+
+Heirs:
+  - Daughter x2
+
+Shares by Category:
+  - Daughter                     1/1      100%
+
+Shares by Individual:
+  - Daughter 1                   1/2      50%
+  - Daughter 2                   1/2      50%
+
+Calculation Steps:
+  1. Daughter gets the prescribed share of 2/3 (Rule 3b).
+  2. Distribute the remaining shares according to relative priority (Rule 14)
+  3. Total shares are still remaining to be distributed. Shares should now be increased proportionally among all heirs except the spouse (Rule 19).

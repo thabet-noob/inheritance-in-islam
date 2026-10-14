@@ -1,0 +1,27 @@
+Test Case #100
+http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=100
+
+Heirs:
+  - Wife x1
+  - Son x1
+  - Father x1
+  - PaternalNephew x1
+
+Shares by Category:
+  - Wife                         1/8      12.5%
+  - Son                          17/24    70.83%
+  - Father                       1/6      16.67%
+  - PaternalNephew               0/24     0%
+
+Shares by Individual:
+  - Wife                         1/8      12.5%
+  - Son                          17/24    70.83%
+  - Father                       1/6      16.67%
+  - PaternalNephew               0        0%
+
+Calculation Steps:
+  1. Son blocks PaternalNephew from receiving any share. (Rule 13)
+  2. Wife gets the prescribed share of 1/8 (Rule 2b).
+  3. Father gets the prescribed share of 1/6 (Rule 5a).
+  4. Distribute the remaining shares according to relative priority (Rule 14)
+  5. Son is the only heir remaining receiving share of 17/24 (Rule 14).

@@ -1,0 +1,74 @@
+{
+  "id": 93,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=93",
+  "heirs": [
+    {
+      "heir": "Wife",
+      "count": 2
+    },
+    {
+      "heir": "FullBrother",
+      "count": 3
+    },
+    {
+      "heir": "FullSister",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Wife",
+      "fraction": "1/4",
+      "percentage": "25%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "9/14",
+      "percentage": "64.29%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "3/28",
+      "percentage": "10.71%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Wife 1",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "Wife 2",
+      "fraction": "1/8",
+      "percentage": "12.5%"
+    },
+    {
+      "heir": "FullBrother 1",
+      "fraction": "3/14",
+      "percentage": "21.43%"
+    },
+    {
+      "heir": "FullBrother 2",
+      "fraction": "3/14",
+      "percentage": "21.43%"
+    },
+    {
+      "heir": "FullBrother 3",
+      "fraction": "3/14",
+      "percentage": "21.43%"
+    },
+    {
+      "heir": "FullSister",
+      "fraction": "3/28",
+      "percentage": "10.71%"
+    }
+  ],
+  "steps": [
+    "Wife gets the prescribed share of 1/4 (Rule 2a).",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Joint Ta'seeb of FullBrother and FullSister (Rule 44).",
+    "FullBrother and FullSister share in the ratio of 2:1 (Rule 15)",
+    "FullBrother gets the share of 9/14 and FullSister gets the share of 3/28. (Rule 15, 44)"
+  ]
+}

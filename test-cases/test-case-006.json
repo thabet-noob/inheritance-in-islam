@@ -1,0 +1,43 @@
+{
+  "id": 6,
+  "url": "http://inheritance.ilmsummit.org/projects/inheritance/Results.aspx?TestCaseID=6",
+  "heirs": [
+    {
+      "heir": "Father",
+      "count": 1
+    },
+    {
+      "heir": "FullBrother",
+      "count": 1
+    }
+  ],
+  "shares_by_category": [
+    {
+      "heir": "Father",
+      "fraction": "1/1",
+      "percentage": "100%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "0/1",
+      "percentage": "0%"
+    }
+  ],
+  "shares_by_individual": [
+    {
+      "heir": "Father",
+      "fraction": "1",
+      "percentage": "100%"
+    },
+    {
+      "heir": "FullBrother",
+      "fraction": "0",
+      "percentage": "0%"
+    }
+  ],
+  "steps": [
+    "Father blocks FullBrother from receiving any share. (Rule 13)",
+    "Distribute the remaining shares according to relative priority (Rule 14)",
+    "Father is the only heir remaining receiving share of 1/1 (Rule 14)."
+  ]
+}
