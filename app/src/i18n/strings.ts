@@ -191,6 +191,7 @@ const UI = {
     shareCopied: 'Link copied ✓',
     shareShort: 'I calculated an inheritance distribution according to Islamic law:',
     sharePrivacy: 'The link contains the relations and amounts only, never the names.',
+    privacyNote: 'Anonymous, cookie-free usage statistics. Names and amounts never leave your browser.',
     footer:
       'For educational reference only. Not a fatwa. Verify your case with a qualified scholar. Rules based on the Inheritance Calculator by ilmsummit.org.',
     families: [
@@ -286,6 +287,7 @@ const UI = {
     shareCopied: 'تم نسخ الرابط ✓',
     shareShort: 'حسبتُ توزيع تركة وفق أحكام المواريث الإسلامية:',
     sharePrivacy: 'يحتوي الرابط على صلات القرابة والمبالغ فقط، دون الأسماء.',
+    privacyNote: 'إحصاءات استخدام مجهولة دون ملفات تعريف الارتباط. الأسماء والمبالغ لا تغادر متصفحك أبدًا.',
     footer:
       'للاسترشاد التعليمي فقط، وليست فتوى. يُرجى التحقق من مسألتك لدى عالم مختص. القواعد مأخوذة من حاسبة المواريث في موقع ilmsummit.org.',
     families: [

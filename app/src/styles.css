@@ -838,3 +838,5 @@ button, a, input, select, label { touch-action: manipulation; -webkit-tap-highli
 .export-mode .chip { background: transparent; }
 .export-mode .footer { margin-top: 0; }
 .export-mode .copyright a { border-bottom: none; }
+
+.privacy-note { font-size: 11.5px; color: var(--text-muted); }

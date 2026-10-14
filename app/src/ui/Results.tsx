@@ -2,6 +2,7 @@ import { ReactNode, useState } from 'react';
 import { Flags, Step } from '../engine/calculate';
 import { Fraction } from '../engine/fraction';
 import { formatMoney, formatPercent } from '../engine/money';
+import { track } from '../analytics';
 import { formatStep } from '../i18n/messages';
 import { heirName, Lang, ruleIdLabel, Strings, t } from '../i18n/strings';
 import { PersonView } from './Circle';
@@ -298,7 +299,10 @@ function RulesList({ steps, lang }: { steps: Step[]; lang: Lang }) {
             className="chip"
             aria-expanded={open === i}
             title={ruleText(step.rule, lang)}
-            onClick={() => setOpen(open === i ? null : i)}
+            onClick={() => {
+              if (open !== i) track('rule-opened', { rule: step.rule });
+              setOpen(open === i ? null : i);
+            }}
           >
             {s.rule(ruleIdLabel(step.rule, lang))}
           </button>

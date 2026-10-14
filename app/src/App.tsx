@@ -3,6 +3,7 @@ import { calculate } from './engine/calculate';
 import { Gender, HEIR_INFO, HEIR_TYPES, HeirType, Heirs } from './engine/heirs';
 import { allocateCents, applyBequest, formatMoney, toCents } from './engine/money';
 import { relevance, Relevance } from './engine/relevance';
+import { track, trackOnce, trackPageview } from './analytics';
 import { groupTitle, heirName, heirNote, Lang, t } from './i18n/strings';
 import { Circle, PersonView } from './ui/Circle';
 import { ALWAYS_VISIBLE, SLOTS } from './ui/layout';
@@ -106,6 +107,13 @@ export default function App() {
   const [deceased, setDeceasedName] = useState<string | Bilingual>(
     exported ? exported.deceased : shared ? '' : DEFAULT_DECEASED_NAME,
   );
+
+  // Anonymous statistics: one page view per visit (never from the hidden PDF export frame).
+  useEffect(() => {
+    if (exportMode) return;
+    trackPageview();
+    if (shared) track('shared-link-opened', { heirs: Object.keys(shared.h).length });
+  }, []);
 
   // Export frame: once rendered, build the PDF and hand it to the parent page.
   useEffect(() => {
@@ -232,11 +240,18 @@ export default function App() {
   const viewById = new Map(views.map((v) => [v.id, v]));
 
   const update = (t: HeirType, fn: (list: Person[]) => Person[]) => setPeople((p) => ({ ...p, [t]: fn(p[t]) }));
-  const toggle = (t: HeirType, id: number) => update(t, (l) => l.map((p) => (p.id === id ? { ...p, alive: !p.alive } : p)));
+  const toggle = (t: HeirType, id: number) => {
+    trackOnce('case-edited');
+    update(t, (l) => l.map((p) => (p.id === id ? { ...p, alive: !p.alive } : p)));
+  };
   const rename = (t: HeirType, id: number, name: string) => update(t, (l) => l.map((p) => (p.id === id ? { ...p, name } : p)));
-  const add = (t: HeirType) => update(t, (l) => [...l, person(true)]);
+  const add = (t: HeirType) => {
+    trackOnce('case-edited');
+    update(t, (l) => [...l, person(true)]);
+  };
   const remove = (t: HeirType, id: number) => update(t, (l) => (l.length > 1 ? l.filter((p) => p.id !== id) : l));
   const reset = () => {
+    track('reset-example');
     setPeople(initialPeople());
     setGender('male');
     setEstate(DEFAULT_ESTATE);
@@ -245,6 +260,7 @@ export default function App() {
     setDeceasedName(DEFAULT_DECEASED_NAME);
   };
   const clearAll = () => {
+    track('clear-all');
     setPeople(Object.fromEntries(HEIR_TYPES.map((t) => [t, [person(false)]])) as unknown as People);
     setDeceasedName('');
   };
@@ -256,8 +272,10 @@ export default function App() {
     try {
       const state: ExportState = { gender, people, estate, bequest, currency, deceased, lang, showAll };
       await exportPdf(state, `${base.replace(/\s+/g, '-')}-${date}.pdf`);
+      track('pdf-download', { lang });
     } catch {
       // fall back to the browser's print dialog
+      track('pdf-fallback-print', { lang });
       preparePrint();
       window.print();
     } finally {
@@ -333,6 +351,7 @@ export default function App() {
             className="lang-toggle"
             onClick={() => {
               const next = lang === 'ar' ? 'en' : 'ar';
+              track('language', { to: next });
               localStorage.setItem('preferredLang', next);
               setLang(next);
             }}
@@ -389,7 +408,11 @@ export default function App() {
           </div>
           <div className="toolbar__actions">
             <label className="switch">
-              <input type="checkbox" role="switch" checked={showAll} onChange={(e) => setShowAll(e.target.checked)} />
+              <input type="checkbox" role="switch" checked={showAll} onChange={(e) => {
+                  if (e.target.checked) track('show-all-relatives');
+                  setShowAll(e.target.checked);
+                }}
+              />
               <span>{s.showAll}</span>
             </label>
             <button className="ghost" onClick={clearAll}>
@@ -519,6 +542,7 @@ export default function App() {
 
       <footer className="footer" data-pdf-block>
         <p>{s.footer}</p>
+        <p className="privacy-note">{s.privacyNote}</p>
         <p className="copyright">
           © {new Date().getFullYear()}{' '}
           <a href={COPYRIGHT_URL} target="_blank" rel="author noopener noreferrer" lang="en" dir="ltr">

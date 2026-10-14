@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { track } from '../analytics';
 import { Strings } from '../i18n/strings';
 
 interface Props {
@@ -38,6 +39,7 @@ export function ShareMenu({ s, url, text }: Props) {
   ];
 
   const copy = async () => {
+    track('share', { channel: 'copy-link' });
     try {
       await navigator.clipboard.writeText(url);
     } catch {
@@ -49,7 +51,15 @@ export function ShareMenu({ s, url, text }: Props) {
 
   return (
     <div className="share" ref={ref}>
-      <button className="action" aria-haspopup="menu" aria-expanded={open} onClick={() => setOpen(!open)}>
+      <button
+        className="action"
+        aria-haspopup="menu"
+        aria-expanded={open}
+        onClick={() => {
+          if (!open) track('share-menu-opened');
+          setOpen(!open);
+        }}
+      >
         <span aria-hidden="true">⤴</span> {s.share}
       </button>
       {open && (
@@ -58,7 +68,10 @@ export function ShareMenu({ s, url, text }: Props) {
             <button
               role="menuitem"
               className="share__item share__item--native"
-              onClick={() => navigator.share({ title: s.title, text, url }).catch(() => undefined)}
+              onClick={() => {
+                track('share', { channel: 'native' });
+                navigator.share({ title: s.title, text, url }).catch(() => undefined);
+              }}
             >
               {s.shareNative}
             </button>
@@ -71,7 +84,10 @@ export function ShareMenu({ s, url, text }: Props) {
               href={l.href}
               target="_blank"
               rel="noopener noreferrer"
-              onClick={() => setOpen(false)}
+              onClick={() => {
+                track('share', { channel: l.key });
+                setOpen(false);
+              }}
             >
               {l.label}
             </a>
