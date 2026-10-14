@@ -5,7 +5,7 @@ A web app that runs entirely in the browser. You mark which relatives of the dec
 ```bash
 npm install
 npm run dev    # http://localhost:5173
-npm test       # engine tests against the 133 reference cases
+npm test       # 155 tests, including the 133 reference cases
 npm run build  # static build in dist/
 ```
 
@@ -15,12 +15,20 @@ npm run build  # static build in dist/
 |---|---|
 | `src/engine/fraction.ts` | Exact rational arithmetic on BigInt, so shares never use floats |
 | `src/engine/heirs.ts` | The 29 standard heirs, with labels and eligibility notes |
-| `src/engine/calculate.ts` | The calculation engine (pure, no UI imports) |
+| `src/engine/calculate.ts` | The calculation engine (pure, no UI imports). Steps are returned as message keys plus parameters, so they can be shown in any language. |
 | `src/engine/relevance.ts` | Decides whether a relative group could change the result, which drives the "smart display" |
-| `src/engine/money.ts` | Splits the estate into cents by largest remainder, so the total is exact |
-| `src/ui/*`, `src/App.tsx` | Family-tree UI, results and rules list |
-| `src/data/rules.txt` | Copy of `../rules/rules.txt`; rule chips show its text |
-| `tests/engine.test.ts` | Runs every case in `../test-cases/` plus the default scenario |
+| `src/engine/money.ts` | Splits the estate into cents by largest remainder, so the total is exact; applies the one-third bequest limit |
+| `src/i18n/strings.ts` | Interface text in Arabic and English; Arabic heir names in singular, dual (nominative and genitive) and plural |
+| `src/i18n/messages.ts` | Renders each calculation step in Arabic or English, with gender agreement |
+| `src/data/rules.txt`, `src/data/rules.ar.txt` | The 44 rules in English and Arabic; rule chips show their text |
+| `src/App.tsx`, `src/ui/Circle.tsx`, `src/ui/layout.ts` | Family-tree interface, layout and the fit-to-width tree |
+| `src/ui/Results.tsx` | Summary tiles, bar chart, table and the rules-applied list |
+| `src/ui/pdf.ts` | PDF export: renders the report in a hidden laptop-width frame, captures it and builds an A4 PDF |
+| `src/ui/share.ts`, `src/ui/ShareMenu.tsx` | Share links (relations and amounts only, no names) and the share menu |
+| `src/analytics.ts` | Anonymous, cookie-free statistics (Umami); never sends names, amounts or the link hash |
+| `tests/engine.test.ts` | Every case in `../test-cases/`, the default examples, the bequest limit and relevance |
+| `tests/i18n.test.ts` | Both rule files parse fully; every step renders in both languages with correct Arabic grammar |
+| `tests/share.test.ts` | Share links round-trip, carry no names and reject tampered input |
 
 ## Engine pipeline
 
