@@ -2,6 +2,8 @@
 
 An Islamic inheritance calculator that runs entirely in the browser. Mark which relatives of the deceased are alive, and it shows each heir's share as a fraction, a percentage and an amount. Each result comes with the rules that were applied. The app is in Arabic by default, with an English version.
 
+**▶ Try it live: [https://thabet-noob.github.io/inheritance-in-islam/](https://thabet-noob.github.io/inheritance-in-islam/)**
+
 > For educational reference only. Not a fatwa. Verify your case with a qualified scholar.
 
 ## Features
