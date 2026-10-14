@@ -273,10 +273,8 @@ h1 { font-size: clamp(20px, 1rem + 1.4vw, 30px); line-height: 1.25; margin: 0 0 
 /* --------------------------------------------------------------- circles */
 .person { width: 96px; display: flex; flex-direction: column; align-items: center; gap: 3px; }
 .person__disc-wrap { position: relative; width: 80px; height: 80px; }
-.person__ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; }
-.ring-track { fill: none; stroke: transparent; stroke-width: 5; }
-.ring-fill { fill: none; stroke: var(--gold); stroke-width: 5; stroke-linecap: round; transition: stroke-dasharray 0.35s ease; }
-.person--on .ring-track { stroke: var(--gold-soft); }
+.person__ring { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; color: var(--gold); }
+.ring-fill { transition: stroke-dasharray 0.35s ease; }
 .person__disc {
   position: absolute;
   inset: 9px;
@@ -786,3 +784,57 @@ button, a, input, select, label { touch-action: manipulation; -webkit-tap-highli
 @media print {
   .person--on .person__disc { animation: none; }
 }
+
+/* ------------------------------------------- PDF export frame (laptop width) */
+.viz-root.export-mode {
+  color-scheme: light;
+  --surface-0: #ffffff;
+  --surface-1: #ffffff;
+  --surface-2: #faf8f3;
+  --border: #e6e0d2;
+  --text-primary: #1f1b16;
+  --text-secondary: #5b554b;
+  --text-muted: #8d8578;
+  --brand: #0b5d4f;
+  --brand-soft: #e3f1ec;
+  --gold: #b88a2e;
+  --gold-soft: #f7efdc;
+  --alive: #0f8a5f;
+  --alive-2: #1aa874;
+  --off: #ece8df;
+  --off-ink: #a59d8f;
+  --blocked: #b5524c;
+  --blocked-soft: #fbecea;
+  --deceased: #5c1f2b;
+  --deceased-2: #7e2b3a;
+  --series-1: #2a78d6;
+  --series-2: #eb6834;
+  --series-3: #1baf7a;
+  --series-4: #eda100;
+  --series-5: #e87ba4;
+  --series-6: #008300;
+  --series-7: #6250d6;
+  --series-8: #e34948;
+  background: #fff;
+  padding: 0 4px;
+  max-width: none;
+}
+.export-mode *, .export-mode *::before, .export-mode *::after { animation: none !important; transition: none !important; }
+.export-mode .hero, .export-mode .no-print, .export-mode .share, .export-mode .tooltip { display: none !important; }
+.export-mode .add, .export-mode .person__remove, .export-mode .segmented,
+.export-mode .deceased__edit, .export-mode .hidden-note { display: none !important; }
+.export-mode .person__name, .export-mode .deceased__label { box-shadow: none !important; background: none !important; }
+.export-mode .print-only { display: block; }
+.export-mode .print-header { border-bottom: 3px solid var(--brand); padding: 4px 0 10px; margin-bottom: 14px; }
+.export-mode .print-header h1 { color: var(--brand); font-size: 24px; margin: 0 0 8px; }
+.export-mode .print-header dl { display: grid; grid-template-columns: auto 1fr; gap: 4px 14px; margin: 0; font-size: 15px; }
+.export-mode .print-header dt { color: var(--text-muted); font-weight: 600; }
+.export-mode .print-header dd { margin: 0; font-weight: 700; }
+.export-mode .tree-card, .export-mode .card, .export-mode .tile, .export-mode .banner { box-shadow: none; }
+.export-mode .tree-card { margin-bottom: 0; }
+.export-mode .results { margin-top: 0; gap: 0; }
+.export-mode .tiles { grid-template-columns: repeat(3, 1fr); }
+.export-mode .results__grid { grid-template-columns: 1fr; gap: 0; }
+.export-mode .chip { background: transparent; }
+.export-mode .footer { margin-top: 0; }
+.export-mode .copyright a { border-bottom: none; }

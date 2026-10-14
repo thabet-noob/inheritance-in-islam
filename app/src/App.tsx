@@ -9,6 +9,7 @@ import { ALWAYS_VISIBLE, SLOTS } from './ui/layout';
 import { Results } from './ui/Results';
 import { ShareMenu } from './ui/ShareMenu';
 import { decodeScenario, scenarioUrl, summaryText } from './ui/share';
+import { buildPdf, exportPdf, isExportMode, readExportState } from './ui/pdf';
 
 type Bilingual = Record<Lang, string>;
 
@@ -66,6 +67,20 @@ function initialLang(): Lang {
 // A shared link (#s=…) opens that calculation instead of the default example.
 const shared = decodeScenario(window.location.hash);
 
+// Inside the hidden PDF export frame, the full state (names included) comes from the parent page.
+interface ExportState {
+  gender: Gender;
+  people: People;
+  estate: string;
+  bequest: string;
+  currency: string;
+  deceased: string | Bilingual;
+  lang: Lang;
+  showAll: boolean;
+}
+const exportMode = isExportMode();
+const exported = exportMode ? readExportState<ExportState>() : null;
+
 function peopleFromScenario(h: Heirs): People {
   const p = {} as People;
   for (const t of HEIR_TYPES) p[t] = h[t] ? Array.from({ length: h[t]! }, () => person(true)) : [person(false)];
@@ -75,17 +90,30 @@ function peopleFromScenario(h: Heirs): People {
 const COPYRIGHT_URL = 'https://www.linkedin.com/in/thabet-chelligue-6119b217';
 
 export default function App() {
-  const [gender, setGender] = useState<Gender>(shared?.g ?? 'male');
-  const [people, setPeople] = useState<People>(() => (shared ? peopleFromScenario(shared.h) : initialPeople()));
-  const [estate, setEstate] = useState(shared?.e ?? DEFAULT_ESTATE);
-  const [bequest, setBequest] = useState(shared?.b ?? DEFAULT_BEQUEST);
-  const [currency, setCurrency] = useState(shared?.c ?? DEFAULT_CURRENCY);
-  const [showAll, setShowAll] = useState(false);
+  const [gender, setGender] = useState<Gender>(exported?.gender ?? shared?.g ?? 'male');
+  const [people, setPeople] = useState<People>(
+    () => exported?.people ?? (shared ? peopleFromScenario(shared.h) : initialPeople()),
+  );
+  const [estate, setEstate] = useState(exported?.estate ?? shared?.e ?? DEFAULT_ESTATE);
+  const [bequest, setBequest] = useState(exported?.bequest ?? shared?.b ?? DEFAULT_BEQUEST);
+  const [currency, setCurrency] = useState(exported?.currency ?? shared?.c ?? DEFAULT_CURRENCY);
+  const [showAll, setShowAll] = useState(exported?.showAll ?? false);
+  const [exporting, setExporting] = useState(false);
   const [editingDeceased, setEditingDeceased] = useState(false);
-  const [lang, setLang] = useState<Lang>(initialLang);
+  const [lang, setLang] = useState<Lang>(() => exported?.lang ?? initialLang());
   const s = t(lang);
   // A string is a name the user typed; a Bilingual is the example name, shown in the current language.
-  const [deceased, setDeceasedName] = useState<string | Bilingual>(shared ? '' : DEFAULT_DECEASED_NAME);
+  const [deceased, setDeceasedName] = useState<string | Bilingual>(
+    exported ? exported.deceased : shared ? '' : DEFAULT_DECEASED_NAME,
+  );
+
+  // Export frame: once rendered, build the PDF and hand it to the parent page.
+  useEffect(() => {
+    if (!exportMode) return;
+    buildPdf()
+      .then((buffer) => window.parent.postMessage({ type: 'pdf', buffer }, window.location.origin, [buffer]))
+      .catch((err) => window.parent.postMessage({ type: 'pdf-error', message: String(err) }, window.location.origin));
+  }, []);
   const deceasedName = typeof deceased === 'string' ? deceased : deceased[lang];
   const dir = lang === 'ar' ? 'rtl' : 'ltr';
 
@@ -221,6 +249,22 @@ export default function App() {
     setDeceasedName('');
   };
 
+  const onExportPdf = async () => {
+    setExporting(true);
+    const date = new Date().toISOString().slice(0, 10);
+    const base = (deceasedName || (lang === 'ar' ? 'المواريث' : 'inheritance')).replace(/[\\/:*?"<>|]+/g, '').trim();
+    try {
+      const state: ExportState = { gender, people, estate, bequest, currency, deceased, lang, showAll };
+      await exportPdf(state, `${base.replace(/\s+/g, '-')}-${date}.pdf`);
+    } catch {
+      // fall back to the browser's print dialog
+      preparePrint();
+      window.print();
+    } finally {
+      setExporting(false);
+    }
+  };
+
   const visible = (t: HeirType) => showAll || ALWAYS_VISIBLE.has(t) || people[t].some((p) => p.alive) || rel[t]?.relevant;
 
   const hidden = HEIR_TYPES.filter((t) => enabled(t) && !visible(t));
@@ -272,7 +316,7 @@ export default function App() {
   };
 
   return (
-    <div className="viz-root app" dir={dir} lang={lang} ref={rootRef}>
+    <div className={`viz-root app${exportMode ? ' export-mode' : ''}`} dir={dir} lang={lang} ref={rootRef}>
       <header className="hero">
         <div className="hero__top">
           <div className="brand">
@@ -359,7 +403,7 @@ export default function App() {
       </header>
 
       <main>
-        <section className="print-only print-header" aria-hidden="true">
+        <section className="print-only print-header" aria-hidden="true" data-pdf-block>
           <h1>{s.title}</h1>
           <dl>
             {deceasedName && (
@@ -374,7 +418,7 @@ export default function App() {
             </dd>
           </dl>
         </section>
-        <section className="tree-card" aria-label={s.familyTree}>
+        <section className="tree-card" aria-label={s.familyTree} data-pdf-block>
           <div className="tree" ref={treeRef}>
             {SLOTS.map((slot) => {
               if (slot.groups === 'deceased') {
@@ -460,12 +504,8 @@ export default function App() {
           netCents={netCents}
           actions={
             <>
-              <button className="action action--primary" onClick={() => {
-                  preparePrint();
-                  window.print();
-                }}
-              >
-                <span aria-hidden="true">⤓</span> {s.exportPdf}
+              <button className="action action--primary" onClick={onExportPdf} disabled={exporting} aria-busy={exporting}>
+                <span aria-hidden="true">{exporting ? '⏳' : '⤓'}</span> {exporting ? s.exporting : s.exportPdf}
               </button>
               <ShareMenu
                 s={s}
@@ -477,7 +517,7 @@ export default function App() {
         />
       </main>
 
-      <footer className="footer">
+      <footer className="footer" data-pdf-block>
         <p>{s.footer}</p>
         <p className="copyright">
           © {new Date().getFullYear()}{' '}

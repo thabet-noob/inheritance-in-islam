@@ -69,7 +69,7 @@ export function Results({ lang, views, steps, flags, currency, estateCents, bequ
   return (
     <section className="results" aria-label={s.results}>
       {actions && <div className="results__actions no-print">{actions}</div>}
-      <div className="tiles">
+      <div className="tiles" data-pdf-block>
         <div className="tile">
           <span className="tile__label">{s.tileEstate}</span>
           <bdi className="tile__value">{formatMoney(estateCents, currency)}</bdi>
@@ -96,13 +96,13 @@ export function Results({ lang, views, steps, flags, currency, estateCents, bequ
         </div>
       </div>
       {bequestCents > 0n && (
-        <div className="banner banner--bequest" role="note">
+        <div className="banner banner--bequest" role="note" data-pdf-block>
           <span className="chip chip--static">{s.bequest}</span>
           {s.bequestBanner(formatMoney(bequestCents, currency), formatMoney(netCents, currency))}
         </div>
       )}
       {BANNERS.filter((b) => flags[b.flag]).map((b) => (
-        <div className="banner" key={b.flag} role="note">
+        <div className="banner" key={b.flag} role="note" data-pdf-block>
           <span className="chip chip--static">{s.rule(b.rule)}</span>
           {s.banners[b.flag]}
         </div>
@@ -112,7 +112,7 @@ export function Results({ lang, views, steps, flags, currency, estateCents, bequ
         <p className="empty">{s.empty}</p>
       ) : (
         <div className="results__grid">
-          <div className="card">
+          <div className="card" data-pdf-block>
             <h2>{s.distribution}</h2>
             <StackedBar segments={segments} families={families} hasBequest={!!bequest} currency={currency} s={s} />
             <ShareTable
@@ -125,7 +125,7 @@ export function Results({ lang, views, steps, flags, currency, estateCents, bequ
               lang={lang}
             />
           </div>
-          <div className="card">
+          <div className="card" data-pdf-block>
             <h2>{s.rulesApplied}</h2>
             <RulesList steps={steps} lang={lang} />
           </div>

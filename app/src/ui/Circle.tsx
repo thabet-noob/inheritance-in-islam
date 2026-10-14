@@ -58,16 +58,23 @@ export function Circle({ view, lang, currency, canRemove, onToggle, onRename, on
     <div className={`person person--${state}`}>
       <div className="person__disc-wrap">
         <svg className="person__ring" viewBox="0 0 100 100" aria-hidden="true">
-          <circle className="ring-track" cx="50" cy="50" r="46" />
+          {/* colours as SVG attributes (currentColor = gold), so the PDF capture keeps them */}
           {pct > 0 && (
-            <circle
-              className="ring-fill"
-              cx="50"
-              cy="50"
-              r="46"
-              strokeDasharray={`${Math.max(pct * RING, 2)} ${RING}`}
-              transform="rotate(-90 50 50)"
-            />
+            <>
+              <circle cx="50" cy="50" r="46" fill="none" stroke="currentColor" strokeOpacity={0.2} strokeWidth={5} />
+              <circle
+                className="ring-fill"
+                cx="50"
+                cy="50"
+                r="46"
+                fill="none"
+                stroke="currentColor"
+                strokeWidth={5}
+                strokeLinecap="round"
+                strokeDasharray={`${Math.max(pct * RING, 2)} ${RING}`}
+                transform="rotate(-90 50 50)"
+              />
+            </>
           )}
         </svg>
         <button className="person__disc" aria-pressed={view.alive} aria-label={hint} title={hint} onClick={onToggle}>
