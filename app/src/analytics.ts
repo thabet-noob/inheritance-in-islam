@@ -51,7 +51,9 @@ export function trackPageview() {
 }
 
 export function track(event: string, data?: EventData) {
-  send((u) => u.track(event, data));
+  // Function form so the URL is overridden too: Umami would otherwise send location.href,
+  // which can contain the #s=… scenario of a shared link.
+  send((u) => u.track((props) => ({ ...props, url: window.location.pathname, name: event, ...(data ? { data } : {}) })));
 }
 
 /** Track an event only once per page load (e.g. "started editing a case"). */
