@@ -121,6 +121,7 @@ export function Results({ lang, views, steps, flags, currency, estateCents, bequ
               bequest={bequest}
               ofEstate={ofEstate}
               currency={currency}
+              heirsCents={totalCents}
               estateTotalCents={totalCents + bequestCents}
               totalShare={totalShare}
               lang={lang}
@@ -215,12 +216,14 @@ function ShareTable(props: {
   bequest: Segment | null;
   ofEstate: (v: PersonView) => Fraction;
   currency: string;
+  heirsCents: bigint;
   estateTotalCents: bigint;
   totalShare: Fraction;
   lang: Lang;
 }) {
-  const { views, bequest, ofEstate, currency, estateTotalCents, totalShare, lang } = props;
+  const { views, bequest, ofEstate, currency, heirsCents, estateTotalCents, totalShare, lang } = props;
   const s = t(lang);
+  const heirsOfEstate = Fraction.sum(views.filter((v) => v.share?.isPositive()).map(ofEstate));
   return (
     <div className="table-wrap">
       <table className="table">
@@ -234,19 +237,6 @@ function ShareTable(props: {
           </tr>
         </thead>
         <tbody>
-          {bequest && (
-            <tr className="bequest-row">
-              <td>
-                <span className="swatch" style={{ background: BEQUEST_FILL }} />
-                {s.bequest}
-                <span className="relation-inline">{s.bequestRelation}</span>
-              </td>
-              <td className="col-relation">{s.bequestRelation}</td>
-              <td className="num"><bdi>{bequest.fraction}</bdi></td>
-              <td className="num"><bdi>{formatPercent(bequest.ofEstate)}</bdi></td>
-              <td className="num"><bdi>{formatMoney(bequest.cents, currency)}</bdi></td>
-            </tr>
-          )}
           {views.map((v) => {
             const positive = v.share?.isPositive();
             return (
@@ -271,6 +261,35 @@ function ShareTable(props: {
               </tr>
             );
           })}
+          {bequest && (
+            <>
+              <tr className="subtotal-row">
+                <td>{s.subtotalHeirs}</td>
+                <td className="col-relation" />
+                <td className="num"><bdi>{totalShare.toString()}</bdi></td>
+                <td className="num"><bdi>{formatPercent(heirsOfEstate)}</bdi></td>
+                <td className="num"><bdi>{formatMoney(heirsCents, currency)}</bdi></td>
+              </tr>
+              <tr className="bequest-row">
+                <td>
+                  <span className="swatch" style={{ background: BEQUEST_FILL }} />
+                  {s.bequest}
+                  <span className="relation-inline">{s.bequestRelation}</span>
+                </td>
+                <td className="col-relation">{s.bequestRelation}</td>
+                <td className="num"><bdi>{bequest.fraction}</bdi></td>
+                <td className="num"><bdi>{formatPercent(bequest.ofEstate)}</bdi></td>
+                <td className="num"><bdi>{formatMoney(bequest.cents, currency)}</bdi></td>
+              </tr>
+              <tr className="subtotal-row">
+                <td>{s.subtotalBequest}</td>
+                <td className="col-relation" />
+                <td className="num"><bdi>{bequest.fraction}</bdi></td>
+                <td className="num"><bdi>{formatPercent(bequest.ofEstate)}</bdi></td>
+                <td className="num"><bdi>{formatMoney(bequest.cents, currency)}</bdi></td>
+              </tr>
+            </>
+          )}
         </tbody>
         <tfoot>
           <tr>

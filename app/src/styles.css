@@ -518,6 +518,7 @@ h2 { font-size: 15px; margin: 0 0 16px; color: var(--brand); font-weight: 700; l
 .table .num { text-align: end; font-variant-numeric: tabular-nums; white-space: nowrap; }
 .table tbody tr:hover td { background: var(--surface-2); }
 .table tr.muted td { color: var(--text-muted); font-weight: 400; }
+.table tr.subtotal-row td { font-weight: 700; background: var(--surface-2); }
 .table tfoot td { font-weight: 700; border-bottom: none; color: var(--brand); padding-top: 12px; }
 
 .steps { margin: 0; padding-inline-start: 24px; display: flex; flex-direction: column; gap: 10px; font-size: 14px; line-height: 1.6; }
