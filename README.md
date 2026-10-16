@@ -18,16 +18,13 @@ The app opens on a ready-made example: **Salem Rashid Al Dhaheri** leaves an est
 
 | Heir | Rule | Share of the net estate | Amount (AED) |
 |---|---|---|---|
-| Bequest (wasiyya) | Within ⅓ | — | 100,000.00 |
-| *Bequest subtotal* | | | *100,000.00* |
 | Wife | 2b | 1/8 | 112,500.00 |
 | Son | 14, 15 | 13/48 | 243,750.00 |
 | Each daughter (×2) | 14, 15 | 13/96 | 121,875.00 |
 | Mother | 6b | 1/6 | 150,000.00 |
 | Grandfather | 7a | 1/6 | 150,000.00 |
 | Uncle | 13a | Blocked by the son | 0 |
-| *Heirs' subtotal* | | 1 | *900,000.00* |
-| **Total** | | | **1,000,000.00** |
+| **Total** | | **1** | **900,000.00** |
 
 ## Features
 

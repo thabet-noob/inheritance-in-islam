@@ -40,31 +40,14 @@ export function Results({ lang, views, steps, flags, currency, estateCents, bequ
   const totalShare = Fraction.sum(paid.map((v) => v.share!));
   const blockedCount = alive.filter((v) => v.status === 'blocked').length;
 
-  // Heirs' fractions are of the net estate (after the bequest); bar widths and % are of the whole estate.
-  const netRatio = estateCents > 0n ? new Fraction(netCents, estateCents) : Fraction.ONE;
-  const ofEstate = (v: PersonView) => v.share!.mul(netRatio);
-  const bequest: Segment | null =
-    bequestCents > 0n && estateCents > 0n
-      ? {
-          key: 'bequest',
-          name: s.bequest,
-          fill: BEQUEST_FILL,
-          ofEstate: new Fraction(bequestCents, estateCents),
-          fraction: new Fraction(bequestCents, estateCents).toString(),
-          cents: bequestCents,
-        }
-      : null;
-  const segments: Segment[] = [
-    ...(bequest ? [bequest] : []),
-    ...paid.map((v) => ({
-      key: String(v.id),
-      name: v.name,
-      fill: `var(--series-${familyIndex(v.type) + 1})`,
-      ofEstate: ofEstate(v),
-      fraction: v.share!.toString(),
-      cents: v.cents ?? 0n,
-    })),
-  ];
+  // Heirs' shares are of the net estate (after the bequest), so they always total 100%.
+  const segments: Segment[] = paid.map((v) => ({
+    key: String(v.id),
+    name: v.name,
+    fill: `var(--series-${familyIndex(v.type) + 1})`,
+    share: v.share!,
+    cents: v.cents ?? 0n,
+  }));
   const families = [...new Set(paid.map((v) => familyIndex(v.type)))].sort((a, b) => a - b);
 
   return (
@@ -115,13 +98,12 @@ export function Results({ lang, views, steps, flags, currency, estateCents, bequ
         <div className="results__grid">
           <div className="card" data-pdf-block>
             <h2>{s.distribution}</h2>
-            <StackedBar segments={segments} families={families} hasBequest={!!bequest} currency={currency} s={s} />
+            <StackedBar segments={segments} families={families} currency={currency} s={s} />
             <ShareTable
               views={alive}
-              bequest={bequest}
+              hasBequest={bequestCents > 0n}
               currency={currency}
-              heirsCents={totalCents}
-              estateTotalCents={totalCents + bequestCents}
+              totalCents={totalCents}
               totalShare={totalShare}
               lang={lang}
             />
@@ -140,17 +122,13 @@ interface Segment {
   key: string;
   name: string;
   fill: string;
-  ofEstate: Fraction; // share of the whole estate (drives width and %)
-  fraction: string;
+  share: Fraction; // share of the net estate (drives width and %)
   cents: bigint;
 }
 
-const BEQUEST_FILL = 'repeating-linear-gradient(45deg, var(--gold) 0 7px, color-mix(in srgb, var(--gold) 70%, white) 7px 11px)';
-
-function StackedBar({ segments, families, hasBequest, currency, s }: {
+function StackedBar({ segments, families, currency, s }: {
   segments: Segment[];
   families: number[];
-  hasBequest: boolean;
   currency: string;
   s: Strings;
 }) {
@@ -161,7 +139,7 @@ function StackedBar({ segments, families, hasBequest, currency, s }: {
     <div className="bar-wrap">
       <div className="bar" role="img" aria-label={s.barLabel} onMouseLeave={() => setHover(null)}>
         {segments.map((seg) => {
-          const pct = seg.ofEstate.toNumber() * 100;
+          const pct = seg.share.toNumber() * 100;
           return (
             <div
               key={seg.key}
@@ -184,20 +162,14 @@ function StackedBar({ segments, families, hasBequest, currency, s }: {
           <div className="tooltip" style={{ left: hover.x }}>
             <strong>{hover.seg.name}</strong>
             <bdi>
-              {hover.seg.fraction} · {formatPercent(hover.seg.ofEstate)}
+              {hover.seg.share.toString()} · {formatPercent(hover.seg.share)}
             </bdi>
             <bdi>{formatMoney(hover.seg.cents, currency)}</bdi>
           </div>
         )}
       </div>
-      {families.length + (hasBequest ? 1 : 0) > 1 && (
+      {families.length > 1 && (
         <ul className="legend">
-          {hasBequest && (
-            <li>
-              <span className="swatch" style={{ background: BEQUEST_FILL }} />
-              {s.bequest}
-            </li>
-          )}
           {families.map((i) => (
             <li key={i}>
               <span className="swatch" style={{ background: `var(--series-${i + 1})` }} />
@@ -212,14 +184,13 @@ function StackedBar({ segments, families, hasBequest, currency, s }: {
 
 function ShareTable(props: {
   views: PersonView[];
-  bequest: Segment | null;
+  hasBequest: boolean;
   currency: string;
-  heirsCents: bigint;
-  estateTotalCents: bigint;
+  totalCents: bigint;
   totalShare: Fraction;
   lang: Lang;
 }) {
-  const { views, bequest, currency, heirsCents, estateTotalCents, totalShare, lang } = props;
+  const { views, hasBequest, currency, totalCents, totalShare, lang } = props;
   const s = t(lang);
   return (
     <div className="table-wrap">
@@ -234,28 +205,6 @@ function ShareTable(props: {
           </tr>
         </thead>
         <tbody>
-          {bequest && (
-            <>
-              <tr className="bequest-row">
-                <td>
-                  <span className="swatch" style={{ background: BEQUEST_FILL }} />
-                  {s.bequest}
-                  <span className="relation-inline">{s.bequestRelation}</span>
-                </td>
-                <td className="col-relation">{s.bequestRelation}</td>
-                <td className="num"><bdi>{bequest.fraction}</bdi></td>
-                <td className="num"><bdi>{formatPercent(bequest.ofEstate)}</bdi></td>
-                <td className="num"><bdi>{formatMoney(bequest.cents, currency)}</bdi></td>
-              </tr>
-              <tr className="subtotal-row">
-                <td>{s.subtotalBequest}</td>
-                <td className="col-relation" />
-                <td className="num"><bdi>{bequest.fraction}</bdi></td>
-                <td className="num"><bdi>{formatPercent(bequest.ofEstate)}</bdi></td>
-                <td className="num"><bdi>{formatMoney(bequest.cents, currency)}</bdi></td>
-              </tr>
-            </>
-          )}
           {views.map((v) => {
             const positive = v.share?.isPositive();
             return (
@@ -280,27 +229,18 @@ function ShareTable(props: {
               </tr>
             );
           })}
-          {bequest && (
-            <tr className="subtotal-row">
-              <td>{s.subtotalHeirs}</td>
-              <td className="col-relation" />
-              <td className="num"><bdi>{totalShare.toString()}</bdi></td>
-              <td className="num"><bdi>{formatPercent(totalShare)}</bdi></td>
-              <td className="num"><bdi>{formatMoney(heirsCents, currency)}</bdi></td>
-            </tr>
-          )}
         </tbody>
         <tfoot>
           <tr>
             <td>{s.total}</td>
             <td className="col-relation" />
-            <td className="num"><bdi>{bequest ? '—' : totalShare.toString()}</bdi></td>
+            <td className="num"><bdi>{totalShare.toString()}</bdi></td>
             <td className="num"><bdi>100%</bdi></td>
-            <td className="num"><bdi>{formatMoney(estateTotalCents, currency)}</bdi></td>
+            <td className="num"><bdi>{formatMoney(totalCents, currency)}</bdi></td>
           </tr>
         </tfoot>
       </table>
-      {bequest && <p className="table-note">{s.tableNote}</p>}
+      {hasBequest && <p className="table-note">{s.tableNote}</p>}
     </div>
   );
 }
