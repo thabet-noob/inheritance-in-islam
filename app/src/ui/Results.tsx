@@ -119,7 +119,6 @@ export function Results({ lang, views, steps, flags, currency, estateCents, bequ
             <ShareTable
               views={alive}
               bequest={bequest}
-              ofEstate={ofEstate}
               currency={currency}
               heirsCents={totalCents}
               estateTotalCents={totalCents + bequestCents}
@@ -214,16 +213,14 @@ function StackedBar({ segments, families, hasBequest, currency, s }: {
 function ShareTable(props: {
   views: PersonView[];
   bequest: Segment | null;
-  ofEstate: (v: PersonView) => Fraction;
   currency: string;
   heirsCents: bigint;
   estateTotalCents: bigint;
   totalShare: Fraction;
   lang: Lang;
 }) {
-  const { views, bequest, ofEstate, currency, heirsCents, estateTotalCents, totalShare, lang } = props;
+  const { views, bequest, currency, heirsCents, estateTotalCents, totalShare, lang } = props;
   const s = t(lang);
-  const heirsOfEstate = Fraction.sum(views.filter((v) => v.share?.isPositive()).map(ofEstate));
   return (
     <div className="table-wrap">
       <table className="table">
@@ -270,7 +267,7 @@ function ShareTable(props: {
                 </td>
                 <td className="col-relation">{heirName(v.type, 1, lang)}</td>
                 <td className="num"><bdi>{positive ? v.share!.toString() : '0'}</bdi></td>
-                <td className="num"><bdi>{positive ? formatPercent(ofEstate(v)) : '0%'}</bdi></td>
+                <td className="num"><bdi>{positive ? formatPercent(v.share!) : '0%'}</bdi></td>
                 <td className="num">
                   {positive ? (
                     <bdi>{formatMoney(v.cents ?? 0n, currency)}</bdi>
@@ -288,7 +285,7 @@ function ShareTable(props: {
               <td>{s.subtotalHeirs}</td>
               <td className="col-relation" />
               <td className="num"><bdi>{totalShare.toString()}</bdi></td>
-              <td className="num"><bdi>{formatPercent(heirsOfEstate)}</bdi></td>
+              <td className="num"><bdi>{formatPercent(totalShare)}</bdi></td>
               <td className="num"><bdi>{formatMoney(heirsCents, currency)}</bdi></td>
             </tr>
           )}
